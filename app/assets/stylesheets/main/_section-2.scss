@@ -1,0 +1,131 @@
+.we-are-section {
+  position: relative;
+  padding-top: 331px;
+  padding-bottom: 305px;
+  @include bp(xxl) {
+    padding: 200px 0;
+  }
+  @include bp(lg) {
+    padding: 140px 0;
+  }
+  @include bp(xs) {
+    padding: 90px 0;
+  }
+  & picture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+  }
+}
+
+.we-are-title {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 60px;
+  padding-right: 74px;
+  padding-bottom: 33px;
+  border-bottom: 2px solid $green-accent;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  @include bp(xs) {
+    font-size: 22px;
+    padding-bottom: 25px;
+    padding-right: 40px;
+    margin-bottom: 45px;
+  }
+}
+
+.we-are-top-text {
+  max-width: 770px;
+  margin: 0;
+  margin-bottom: 53px;
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 3px 3px 6px rgba(#000, 0.75);
+  @include bp(xs) {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+  & span {
+    color: $green-accent;
+  }
+}
+
+.we-are-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 76px;
+  margin-bottom: 59px;
+  @include bp(xs) {
+    gap: 0;
+    margin-bottom: 0;
+  }
+  & div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include bp(xs) {
+      margin-right: 0;
+      width: 50%;
+      margin-bottom: 35px;
+    }
+    & svg {
+      margin-bottom: 23px;
+      @include bp(xxl) {
+        filter: drop-shadow(3px 3px 2px rgba(#000, 0.75));
+      }
+    }
+    & span {
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 2px;
+      @include bp(xxl) {
+        text-shadow: 2px 2px 4px rgba(#000, 0.75);
+      }
+    }
+  }
+}
+
+.we-are-text {
+  margin: 0;
+  margin-bottom: 67px;
+  max-width: 690px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+  @include bp(xxl) {
+    text-shadow: 3px 3px 6px rgba(#000, 0.75);
+  }
+  @include bp(xs) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.we-are-link {
+  max-width: 525px;
+  @include bp(xs) {
+    font-size: 14px;
+    min-height: 56px;
+  }
+}

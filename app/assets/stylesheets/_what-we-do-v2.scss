@@ -1,0 +1,679 @@
+.what-we-do__main-screen {
+  .container-lg {
+    position: relative;
+    padding-top: 65px;
+    padding-bottom: 400px;
+    @include bp(md) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    @include bp(xs) {
+      padding: 60px 15px 90px;
+    }
+  }
+}
+
+.what-we-do__main-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 52px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 60px;
+  color: #fff;
+  @include bp(xs) {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.what-we-do__main-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1275px;
+  max-width: 100%;
+  margin: 0 auto;
+  @include bp(xs) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -30px;
+  }
+
+  > li {
+    width: 350px;
+    max-width: 33.33333%;
+    @include bp(lg) {
+      padding-right: 20px;
+    }
+    @include bp(md) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    @include bp(xs) {
+      padding: 0;
+      width: 335px;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    i {
+      display: flex;
+      align-items: flex-end;
+      height: 57px;
+      margin-bottom: 27px;
+      @include bp(sm) {
+        height: 40px;
+        margin-bottom: 22px;
+      }
+
+      svg {
+        @include bp(sm) {
+          height: 100%;
+          width: fit-content;
+        }
+      }
+    }
+
+    span {
+      display: block;
+      height: 93px;
+      position: relative;
+      margin-bottom: 32px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: #fff;
+      word-spacing: 100vw;
+      @include bp(sm) {
+        height: 73px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 26px;
+      }
+      @include bp(xs) {
+        height: auto;
+        padding-bottom: 10px;
+        word-spacing: unset;
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        top: calc(100% + 1px);
+        left: 0;
+        width: 74px;
+        height: 2px;
+        background: $green;
+      }
+    }
+
+    div {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #fff;
+      margin-bottom: 22px;
+      @include bp(sm) {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 18px;
+      }
+    }
+
+    a {
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: $green;
+      text-decoration: none;
+      @include bp(sm) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.what-we-do__news {
+  padding: 75px 0 45px;
+  @include bp(xs) {
+    padding: 60px 0;
+  }
+}
+
+.what-we-do__news-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 75px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 42px;
+  color: $blue-accent;
+  @include bp(xs) {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.what-we-do__news-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 58px;
+  @include bp(xs) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  div {
+    font-size: 24px;
+    line-height: 34px;
+    color: $blue;
+    width: 557px;
+    max-width: 50%;
+    position: relative;
+    @include bp(md) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+    @include bp(xs) {
+      font-size: 16px;
+      line-height: 22px;
+      width: 100%;
+      max-width: unset;
+    }
+
+    &:first-child {
+      text-align: right;
+      padding-right: 41px;
+      @include bp(xs) {
+        text-align: center;
+        padding: 0;
+      }
+    }
+
+    &:last-child {
+      padding-left: 41px;
+      @include bp(xs) {
+        text-align: center;
+        padding: 30px 0 0;
+      }
+
+      &:before {
+        position: absolute;
+        content: '';
+        left: -1px;
+        width: 2px;
+        height: calc(100% + 6px);
+        background: linear-gradient(180deg, #396BAB 0%, #5CADA0 100%);
+        top: 50%;
+        transform: translateY(-50%);
+        @include bp(xs) {
+          width: calc(100% + 8px);
+          height: 2px;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 14px;
+        }
+      }
+    }
+  }
+}
+
+.what-we-do__news-wrapper {
+  width: 1315px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.news-slider {
+  margin: 0 -28px;
+  @include bp(lg) {
+    margin: 0 -15px;
+  }
+
+  .slick-slide {
+    padding: 0 28px;
+    @include bp(lg) {
+      padding: 0 15px;
+    }
+  }
+
+  .slide {
+    height: 357px;
+    position: relative;
+    border-radius: 20px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: $dark-blue;
+    @include bp(md) {
+      height: calc(48vw - 30px);
+    }
+    @include bp(xs) {
+      height: calc(94vw - 30px);
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+
+      > img {
+        filter: brightness(120%);
+      }
+
+      > div {
+        > span {
+          color: $green;
+        }
+      }
+    }
+
+    > img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      transition: linear .2s;
+    }
+
+    > div {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 35px 40px;
+      font-size: 24px;
+      line-height: 32px;
+      text-transform: capitalize;
+      @include bp(lg) {
+        padding: 25px 30px;
+      }
+      @include bp(sm) {
+        padding: 20px 25px;
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      span {
+        font-weight: 700;
+        display: block;
+        margin-top: 22px;
+        transition: linear .2s;
+        @include bp(sm) {
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 65px auto 0;
+    @include bp(xs) {
+      margin-top: 30px;
+    }
+
+    li {
+      height: 22px;
+      display: flex;
+      align-items: center;
+      margin-right: 12px;
+
+      &:first-child {
+        button {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        button {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      &.slick-active {
+        button {
+          width: 22px;
+          height: 22px;
+          background-color: $green;
+        }
+      }
+
+      button {
+        border: none;
+        background-color: $grey;
+        font-size: 0;
+        border-radius: 50%;
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+}
+
+.faq-section {
+  background-color: #f2f2f2;
+  padding: 65px 0 80px;
+  @include bp(xs) {
+    padding: 60px 0;
+  }
+}
+
+.faq-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 42px;
+  color: $blue-accent;
+  @include bp(xs) {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.faq-wrapper {
+  width: 1230px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  .faq-item {
+    &:first-child {
+      border-top-color: transparent;
+    }
+  }
+}
+
+.faq-item {
+  border-top: 1px solid $grey;
+}
+
+.faq-head {
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 178px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-size: 28px;
+  line-height: 34px;
+  color: $blue;
+  cursor: pointer;
+  @include bp(lg) {
+    padding-right: 120px;
+  }
+  @include bp(md) {
+    font-size: 22px;
+    line-height: 28px;
+    padding-right: 90px;
+  }
+  @include bp(xs) {
+    min-height: 60px;
+    padding: 14px 50px 10px 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  > i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+
+    svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transition: linear .2s;
+      transform: translate(-50%, -50%) scale(1);
+
+      + svg {
+        transform: translate(-50%, -50%) scale(0);
+      }
+    }
+  }
+
+  &.active {
+    svg {
+      transform: translate(-50%, -50%) scale(0);
+
+      + svg {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+}
+
+.faq-body {
+  display: none;
+  margin-top: -8px;
+  padding-right: 178px;
+  padding-bottom: 24px;
+  font-size: 18px;
+  line-height: 32px;
+  color: $dark-blue;
+  @include bp(lg) {
+    padding-right: 120px;
+  }
+  @include bp(md) {
+    padding-right: 90px;
+  }
+  @include bp(xs) {
+    padding-right: 50px;
+    padding-top: 5px;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.what-we-do__summary-screen {
+  position: relative;
+  padding-top: 165px;
+  padding-bottom: 195px;
+  @include bp(xs) {
+    padding: 60px 0 90px;
+  }
+
+  > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+  }
+
+  > .container-lg {
+    position: relative;
+  }
+}
+
+.what-we-do__summary-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 60px;
+  color: #fff;
+  @include bp(md) {
+    margin-bottom: 60px;
+  }
+  @include bp(xs) {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.what-we-do__summary-wrapper {
+  width: 1345px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.what-we-do__summary-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px 130px;
+  @include bp(xs) {
+    margin-bottom: 60px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.what-we-do__summary-top__item {
+  width: 350px;
+  max-width: 33.33333%;
+  padding: 0 15px;
+  color: #fff;
+  @include bp(xs) {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  > i {
+    display: flex;
+    height: 60px;
+    margin-bottom: 28px;
+    @include bp(sm) {
+      height: 40px;
+      margin-bottom: 20px;
+    }
+
+    svg {
+      height: 100%;
+      width: fit-content;
+    }
+  }
+
+  > span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    @include bp(sm) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  > div {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    @include bp(sm) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.what-we-do__summary-bot {
+  display: flex;
+  @include bp(xs) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.what-we-do__summary-bot-item {
+  position: relative;
+  padding: 10px 32px;
+  min-height: 160px;
+  height: inherit;
+  width: 20%;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+  text-transform: capitalize;
+  @include bp(lg) {
+    padding: 10px 20px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  @include bp(md) {
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    min-height: unset;
+  }
+  @include bp(sm) {
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  @include bp(xs) {
+    //width: 260px;
+    width: 100%;
+    max-width: 310px;
+    padding: 25px 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, #396BAB 0%, #5CADA0 100%);
+    @include bp(xs) {
+      //width: 100%;
+      //height: 2px;
+      width: 2px;
+      height: 100%;
+    }
+  }
+
+  &:last-child {
+    &:after {
+      position: absolute;
+      content: '';
+      right: 0;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, #396BAB 0%, #5CADA0 100%);
+      @include bp(xs) {
+        width: 100%;
+        height: 2px;
+        top: auto;
+        bottom: 0;
+        display: none;
+      }
+    }
+  }
+
+  & + .what-we-do__summary-bot-item {
+    @include bp(xs) {
+      margin-top: 30px;
+    }
+  }
+}

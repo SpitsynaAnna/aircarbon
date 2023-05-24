@@ -1,0 +1,254 @@
+.header {
+  display: flex;
+  align-items: end;
+  min-height: 242px;
+  background: $gradient;
+  @include bp(xxl) {
+    min-height: 200px;
+  }
+  @include bp(md) {
+    min-height: 100px;
+    padding-top: 20px;
+  }
+  & .container-lg {
+    display: flex;
+    height: 100%;
+    padding-bottom: 63px;
+    justify-content: space-between;
+    align-items: end;
+    @include bp(xxl) {
+      padding-bottom: 40px;
+    }
+    @include bp(md) {
+      align-items: center;
+      padding-bottom: 20px;
+    }
+  }
+
+  //transition: linear 0.4s;
+  //position: fixed;
+  //top: 0;
+  //left: 0;
+  //right: 0;
+  //z-index: 100;
+
+  //&.fixed {
+  //  @include bp(md) {
+  //    top: 0;
+  //  }
+  //}
+}
+
+.header-left {
+  @media only screen and (max-width: 1679px){
+    width: 300px;
+  }
+  @include bp(xxl) {
+    width: 280px;
+  }
+  @include bp(lg) {
+    width: 220px;
+  }
+  @include bp(md) {
+    width: auto;
+  }
+  & img {
+    @include bp(lg) {
+      width: 160px;
+      height: 55px;
+    }
+    @include bp(md) {
+      width: 100px;
+      height: 35px;
+    }
+  }
+  & span {
+    display: block;
+    margin-top: 22px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    @include bp(xxl) {
+      font-size: 16px;
+    }
+    @include bp(lg) {
+      font-size: 14px;
+    }
+    @include bp(md) {
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 9px;
+    }
+    @include bp(xs) {
+      font-size: 9px;
+      line-height: 12px;
+      margin-top: 9px;
+    }
+  }
+}
+
+.header-right {
+  @include bp(md) {
+    display: none;
+  }
+  & ul {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    @include bp(xxl) {
+      gap: 20px;
+    }
+    @include bp(lg) {
+      gap: 15px;
+    }
+  }
+
+  & li {
+    a {
+      color: #fff;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      @include bp(xxl) {
+        font-size: 12px;
+      }
+      @include bp(lg) {
+        font-size: 10px;
+      }
+      &:hover {
+        color: $green-accent;
+      }
+    }
+
+    & span {
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: $green-accent;
+      @include bp(xxl) {
+        font-size: 12px;
+      }
+      @include bp(lg) {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.mobile-menu__btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  @include bp(xs) {
+    width: 18px;
+    height: 18px;
+  }
+  &:before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @include bp(md) {
+    display: flex;
+  }
+  svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: ease-in-out .3s;
+    width: 100%;
+    height: 100%;
+    @include bp(xs) {
+      width: 18px;
+      height: 18px;
+    }
+    +svg{
+      width: 80%;
+      height: 80%;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0);
+      @include bp(xs) {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+  &.active {
+    svg{
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0);
+      +svg{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+}
+
+.mobile-menu__wrapper{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  transform: scale(.85);
+  transition: linear .1s;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: $gradient;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  overflow: auto;
+  @supports (-webkit-touch-callout: none) {
+    padding-bottom: 150px;
+  }
+}
+
+.mobile-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  @include bp(xs) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  li {
+    padding: 10px;
+    a {
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: 3px;
+      &:hover {
+        color: $green-accent;
+      }
+    }
+    span {
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: $green-accent;
+    }
+  }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>AirCarbon</title>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon.png" type="image/png">
+    <meta name="theme-color" content="#06849B">
+    <meta name="msapplication-navbutton-color" content="#06849B">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#06849B">
+</head>
+<body>
+
+${require('../parts/header-v2.html')}
+<main class="main">
+    <div class="section main-screen contact-main">
+        <img src="../../images/pixel.jpg" data-original="../../images/contact-main-bg.jpg" class="lazy" alt="">
+        <div class="container-lg">
+            <span class="contact-main__title">Contact the ACX Team</span>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="container-lg">
+            <div class="contact__inner">
+                <div class="contact__top">
+                    <p>If you would like to open a trading account or would like to request a demo of our platform,
+                        please
+                        fill out this form and we would be in touch with you.</p>
+                    <p>If you have carbon offsets that you wish to list for sale on the AirCarbon Exchange, please fill
+                        out
+                        our <span>Carbon Onboarding Form.</span></p>
+                </div>
+                <form action="/api.php" class="contact-form ajax_form clear-styles" data-error-title="Sending error!"
+                      data-error-message="Please try again later." data-success-title="Thank you for contacting us."
+                      data-success-message="We will contact you shortly.">
+                    <div class="contact-form__wrapper">
+                        <div class="col">
+                            <div class="input-wrapper">
+                                <input class="input" type="text" name="email" placeholder="Email*"
+                                       data-title="Email" data-validate-required="Required!">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-wrapper">
+                                <input class="input" type="text" name="first_name" placeholder="First Name*"
+                                       data-title="First Name" data-validate-required="Required!">
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" name="last_name" placeholder="Last Name*"
+                                       data-title="Last Name" data-validate-required="Required!">
+                            </div>
+                        </div>
+                        <div class="col col-small">
+                            <div class="input-wrapper">
+                                <input class="input" type="text" name="country" placeholder="Сountry*" value="Germany"
+                                       data-title="Сountry" data-validate-required="Required!">
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" name="phone" placeholder="Phone number*"
+                                       data-title="Phone Number" data-validate-required="Required!" value="+49">
+                            </div>
+                        </div>
+                        <div class="col input-wrapper">
+                            <input class="input" type="text" name="job" placeholder="Job Title*"
+                                   data-title="Job Title" data-validate-required="Required!">
+                        </div>
+                        <div class="col">
+                            <div class="input-wrapper">
+                                <input class="input" type="text" name="company_name*" placeholder="Company name*"
+                                       data-title="Company name*" data-validate-required="Required!">
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" name="region" placeholder="Country/Region*"
+                                       data-title="Country/Region" data-validate-required="Required!">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__services">
+                        <span>Which ACX Services are you interested in:</span>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="services1" name="spot-exchange" data-title="Spot Exchange"
+                                   value="Spot Exchange" checked>
+                            <label for="services1">
+                                <span><svg width="13" height="10" viewBox="0 0 13 10" fill="none"
+                                           xmlns="http://www.w3.org/2000/svg">
+<path
+    d="M4.49717 7.07322C5.67242 5.84665 6.76546 4.70254 7.86099 3.56165C8.88427 2.49614 9.90818 1.43062 10.9383 0.372192C11.4216 -0.12449 12.1771 -0.120625 12.6461 0.363173C13.1076 0.839241 13.1256 1.60391 12.6523 2.10446C11.7094 3.10169 10.7496 4.08153 9.79607 5.06845C8.43958 6.47217 7.08185 7.8759 5.72536 9.27962C5.71041 9.29508 5.69671 9.31054 5.68301 9.32665C4.8447 10.3252 4.06307 10.1119 3.36676 9.34211C2.42445 8.29978 1.42047 7.31737 0.447634 6.30404C-0.00826569 5.82926 -0.109784 5.34675 0.115052 4.81399C0.44452 4.03257 1.45659 3.83351 2.04079 4.43648C2.76762 5.1857 3.49506 5.93491 4.21815 6.68863C4.3122 6.78655 4.3807 6.91088 4.49717 7.07322Z"
+    fill="#5CAEA0"/>
+</svg>
+</span>
+                                Spot Exchange
+                            </label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="services2" name="carbonfinder" data-title="CarbonFinder"
+                                   value="CarbonFinder">
+                            <label for="services2">
+                                 <span><svg width="13" height="10" viewBox="0 0 13 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+<path
+    d="M4.49717 7.07322C5.67242 5.84665 6.76546 4.70254 7.86099 3.56165C8.88427 2.49614 9.90818 1.43062 10.9383 0.372192C11.4216 -0.12449 12.1771 -0.120625 12.6461 0.363173C13.1076 0.839241 13.1256 1.60391 12.6523 2.10446C11.7094 3.10169 10.7496 4.08153 9.79607 5.06845C8.43958 6.47217 7.08185 7.8759 5.72536 9.27962C5.71041 9.29508 5.69671 9.31054 5.68301 9.32665C4.8447 10.3252 4.06307 10.1119 3.36676 9.34211C2.42445 8.29978 1.42047 7.31737 0.447634 6.30404C-0.00826569 5.82926 -0.109784 5.34675 0.115052 4.81399C0.44452 4.03257 1.45659 3.83351 2.04079 4.43648C2.76762 5.1857 3.49506 5.93491 4.21815 6.68863C4.3122 6.78655 4.3807 6.91088 4.49717 7.07322Z"
+    fill="#5CAEA0"/>
+</svg>
+</span>
+                                CarbonFinder
+                            </label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="services3" name="carbon-market-board"
+                                   data-title="Carbon Market Board"
+                                   value="Carbon Market Board">
+                            <label for="services3">
+                                 <span><svg width="13" height="10" viewBox="0 0 13 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+<path
+    d="M4.49717 7.07322C5.67242 5.84665 6.76546 4.70254 7.86099 3.56165C8.88427 2.49614 9.90818 1.43062 10.9383 0.372192C11.4216 -0.12449 12.1771 -0.120625 12.6461 0.363173C13.1076 0.839241 13.1256 1.60391 12.6523 2.10446C11.7094 3.10169 10.7496 4.08153 9.79607 5.06845C8.43958 6.47217 7.08185 7.8759 5.72536 9.27962C5.71041 9.29508 5.69671 9.31054 5.68301 9.32665C4.8447 10.3252 4.06307 10.1119 3.36676 9.34211C2.42445 8.29978 1.42047 7.31737 0.447634 6.30404C-0.00826569 5.82926 -0.109784 5.34675 0.115052 4.81399C0.44452 4.03257 1.45659 3.83351 2.04079 4.43648C2.76762 5.1857 3.49506 5.93491 4.21815 6.68863C4.3122 6.78655 4.3807 6.91088 4.49717 7.07322Z"
+    fill="#5CAEA0"/>
+</svg>
+</span>
+                                Carbon Market Board
+                            </label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="services4" name="auctions"
+                                   data-title="Auctions"
+                                   value="Auctions">
+                            <label for="services4">
+                                 <span><svg width="13" height="10" viewBox="0 0 13 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+<path
+    d="M4.49717 7.07322C5.67242 5.84665 6.76546 4.70254 7.86099 3.56165C8.88427 2.49614 9.90818 1.43062 10.9383 0.372192C11.4216 -0.12449 12.1771 -0.120625 12.6461 0.363173C13.1076 0.839241 13.1256 1.60391 12.6523 2.10446C11.7094 3.10169 10.7496 4.08153 9.79607 5.06845C8.43958 6.47217 7.08185 7.8759 5.72536 9.27962C5.71041 9.29508 5.69671 9.31054 5.68301 9.32665C4.8447 10.3252 4.06307 10.1119 3.36676 9.34211C2.42445 8.29978 1.42047 7.31737 0.447634 6.30404C-0.00826569 5.82926 -0.109784 5.34675 0.115052 4.81399C0.44452 4.03257 1.45659 3.83351 2.04079 4.43648C2.76762 5.1857 3.49506 5.93491 4.21815 6.68863C4.3122 6.78655 4.3807 6.91088 4.49717 7.07322Z"
+    fill="#5CAEA0"/>
+</svg>
+</span>
+                                Auctions
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-wrapper textarea-wrapper">
+                        <textarea class="textarea" name="comment" data-title="Message"
+                                  placeholder="Message*" data-validate-required="Required!"></textarea>
+                    </div>
+                    <div class="contact-form__bot">
+                        <p>AirCarbon Pte. Ltd. is committed to protecting and respecting your privacy, and we’ll only
+                            use your personal information to provide the products and services you requested from us.
+                            From time to time, we would like to contact you about our products and services, as well as
+                            other content that may be of interest to you. If you consent to us contacting you for this
+                            purpose, please tick below accordingly:
+                        </p>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="agreement1" name="agreement1"
+                                   data-title="agreement to receive other communications"
+                                   value="agreement to receive other communications">
+                            <label for="agreement1">
+                                <span><svg width="13" height="10" viewBox="0 0 13 10" fill="none"
+                                           xmlns="http://www.w3.org/2000/svg">
+<path
+    d="M4.49717 7.07322C5.67242 5.84665 6.76546 4.70254 7.86099 3.56165C8.88427 2.49614 9.90818 1.43062 10.9383 0.372192C11.4216 -0.12449 12.1771 -0.120625 12.6461 0.363173C13.1076 0.839241 13.1256 1.60391 12.6523 2.10446C11.7094 3.10169 10.7496 4.08153 9.79607 5.06845C8.43958 6.47217 7.08185 7.8759 5.72536 9.27962C5.71041 9.29508 5.69671 9.31054 5.68301 9.32665C4.8447 10.3252 4.06307 10.1119 3.36676 9.34211C2.42445 8.29978 1.42047 7.31737 0.447634 6.30404C-0.00826569 5.82926 -0.109784 5.34675 0.115052 4.81399C0.44452 4.03257 1.45659 3.83351 2.04079 4.43648C2.76762 5.1857 3.49506 5.93491 4.21815 6.68863C4.3122 6.78655 4.3807 6.91088 4.49717 7.07322Z"
+    fill="#5CAEA0"/>
+</svg></span>
+                                I agree to receive other communications from AirCarbon Pte. Ltd.
+                            </label>
+                        </div>
+                        <p>In order to provide you the content requested, we need to store and process your personal
+                            data. If you consent to us storing your personal data for this purpose, please tick the
+                            checkbox below.</p>
+                        <div class="checkbox-wrapper checkbox-required">
+                            <input type="checkbox" id="agreement2" name="agreement2"
+                                   data-title="Personal data"
+                                   value="Personal data">
+                            <label for="agreement2">
+                                <span><svg width="13" height="10" viewBox="0 0 13 10" fill="none"
+                                           xmlns="http://www.w3.org/2000/svg">
+<path
+    d="M4.49717 7.07322C5.67242 5.84665 6.76546 4.70254 7.86099 3.56165C8.88427 2.49614 9.90818 1.43062 10.9383 0.372192C11.4216 -0.12449 12.1771 -0.120625 12.6461 0.363173C13.1076 0.839241 13.1256 1.60391 12.6523 2.10446C11.7094 3.10169 10.7496 4.08153 9.79607 5.06845C8.43958 6.47217 7.08185 7.8759 5.72536 9.27962C5.71041 9.29508 5.69671 9.31054 5.68301 9.32665C4.8447 10.3252 4.06307 10.1119 3.36676 9.34211C2.42445 8.29978 1.42047 7.31737 0.447634 6.30404C-0.00826569 5.82926 -0.109784 5.34675 0.115052 4.81399C0.44452 4.03257 1.45659 3.83351 2.04079 4.43648C2.76762 5.1857 3.49506 5.93491 4.21815 6.68863C4.3122 6.78655 4.3807 6.91088 4.49717 7.07322Z"
+    fill="#5CAEA0"/>
+</svg></span>
+                                I agree to allow AirCarbon Pte. Ltd. to store and process my personal data.*
+                            </label>
+                        </div>
+                        <p>You can unsubscribe from these communications at any time. For more information on how to
+                            unsubscribe, our privacy practices, and how we are committed to protecting and respecting
+                            your privacy, please review our Privacy Policy.</p>
+                        <div class="contact-form__footer">
+                            <button type="submit" class="btn" data-sending="Sending..." data-error="Error :("
+                                    data-sent="Submit" disabled>Submit
+                            </button>
+                            <div class="contact-form__captcha">Captcha</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+${require('../parts/footer.html')}
+
+</body>
+</html>

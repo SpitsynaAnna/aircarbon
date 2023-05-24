@@ -1,0 +1,148 @@
+.current-section {
+  position: relative;
+  padding-top: 435px;
+  padding-bottom: 209px;
+  @include bp(lg) {
+    padding: 140px 0;
+  }
+  @include bp(xs) {
+    padding: 90px 0;
+  }
+  & > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  & .work-wrapper > div:last-child {
+    padding-left: 0;
+    margin-top: -206px;
+    @include bp(lg) {
+      margin-top: 0;
+    }
+  }
+
+  & .work-link {
+    max-width: 622px;
+  }
+
+  & .work-text {
+    width: 100%;
+    max-width: 610px;
+    margin-bottom: 47px;
+  }
+}
+
+.current-wrapper {
+  max-width: 762px;
+  background-color: #fff;
+  border-radius: 17px;
+  padding: 123px 69px 73px 69px;
+  @include bp(lg) {
+    padding: 60px;
+  }
+  @include bp(md) {
+    margin-top: 60px;
+  }
+  @include bp(xs) {
+    padding: 30px 20px;
+  }
+  & .slide {
+    & span {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 12px;
+      line-height: 30px;
+      font-weight: 700;
+      color: $green-accent;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    & div {
+      max-width: 545px;
+      margin-bottom: 38px;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 700;
+      color: #043451;
+      @include bp(xs) {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+      }
+    }
+
+    & p {
+      max-width: 590px;
+      margin: 0 0 41px;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+      color: #043451;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @include bp(xs) {
+        font-size: 14px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+      }
+    }
+    & a {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #117495;
+      @include bp(xs) {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+.current-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 583px;
+  padding-top: 8px;
+  background-color: #fff;
+
+  &:before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $green-accent;
+    order: 1;
+
+  }
+  .current-arrow{
+    @include bp(xs) {
+      width: 45px;
+      min-width: 45px;
+      height: 45px;
+      display: flex;
+    }
+    svg{
+      @include bp(xs) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  & .arrow-prev {
+    order: 2;
+  }
+}
+

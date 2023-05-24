@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>AirCarbon</title>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon.png" type="image/png">
+    <meta name="theme-color" content="#06849B">
+    <meta name="msapplication-navbutton-color" content="#06849B">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#06849B">
+</head>
+<body>
+
+${require('../parts/header-v2.html')}
+<main class="main">
+    <div class="section main-screen commentary-view-main">
+        <img src="../../images/pixel.jpg" data-original="../../images/commentary-view-bg.jpg" class="lazy" alt="">
+    </div>
+    <div class="commentary-view">
+        <div class="container-lg">
+
+            <div class="commentary-view__wrapper">
+                <a href="javascript:void(0)" class="commentary-view__back">&lt; Back</a>
+                <div class="commentary-view__inner">
+                    <div class="commentary-view__head">
+                        <div class="commentary-view__author">
+                            <div class="commentary-view__author-pic">
+                                <img src="../../images/pixel.png" data-original="../../images/author.png" class="lazy"
+                                     alt="">
+                            </div>
+                            <span class="commentary-view__author-name">Thomas McMahon</span>
+                        </div>
+                        <div class="commentary-view__search">
+                            <form class="clear-styles">
+                                <div class="input-wrapper">
+                                    <input type="search" class="input" placeholder="Search">
+                                </div>
+                                <button type="submit">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.41917 0.000343003C11.2008 0.0504846 14.2156 5.20328 11.8888 9.37585C11.6634 9.77993 11.7303 9.99131 12.0355 10.2833C12.9105 11.122 13.7609 11.9871 14.6113 12.8504C14.9716 13.2171 15.0956 13.6546 14.9233 14.159C14.7649 14.624 14.4273 14.8836 13.9637 14.976C13.4863 15.0713 13.1005 14.8737 12.7697 14.5424C11.937 13.7077 11.0915 12.8838 10.2756 12.0324C9.98718 11.7315 9.77851 11.6548 9.36708 11.8751C5.6534 13.8571 1.16508 11.8348 0.173907 7.75853C-0.782813 3.83077 2.3344 -0.0419333 6.41917 0.000343003ZM6.37979 1.52426C3.71239 1.51934 1.54403 3.65773 1.53418 6.30443C1.52434 8.958 3.67007 11.122 6.32861 11.1406C8.97928 11.1583 11.1614 9.00323 11.1732 6.35555C11.1851 3.70099 9.03046 1.52917 6.37979 1.52426Z"
+                                            fill="#327292"/>
+                                    </svg>
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+                    <ul class="commentary-view__social">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg width="10" height="20" viewBox="0 0 10 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.91143 20C2.91143 16.9465 2.91143 14.0187 2.91143 10.992C1.88941 10.992 0.987945 10.992 0 10.992C0 9.75401 0 8.61765 0 7.32353C0.904088 7.32353 1.83962 7.32353 2.86164 7.32353C3.163 4.98396 2.31918 2.44385 4.6043 0.81016C6.27358 -0.387701 8.12369 0.173797 10 0C10 1.12567 10 2.12299 10 3.00802C8.89937 3.3262 7.55241 3.32888 6.8999 4.01604C6.326 4.62299 6.52778 5.99465 6.35744 7.22995C7.64675 7.22995 8.71069 7.22995 9.97904 7.22995C9.81656 8.5508 9.68029 9.67647 9.5283 10.9332C8.5587 10.9332 7.61792 10.9332 6.51468 10.9332C6.51468 14.0214 6.51468 16.9786 6.51468 19.9973C5.27778 20 4.20597 20 2.91143 20Z"
+                                        fill="#2B3A57"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.0956754 16.0686C2.52476 16.0455 4.5366 15.6243 6.4315 14.1346C4.48876 13.757 3.09084 12.9403 2.35202 11.1963C2.70814 11.0987 3.01377 11.0165 3.55327 10.8701C1.53612 9.92234 0.196666 8.68436 0 6.47036C0.667069 6.57823 1.24909 6.67327 2.1022 6.80939C0.5209 4.96782 0.449141 3.11341 1.26504 0.901979C3.92003 3.74267 6.95506 5.3685 10.8405 5.59452C10.6651 3.88137 10.9734 2.34801 12.3315 1.23074C13.8012 0.0210034 15.5818 -0.477274 17.2242 0.57065C18.7231 1.52611 19.9669 1.3232 21.5402 0.765851C21.0937 1.38998 20.6473 2.01668 20.0705 2.82317C20.7376 2.66907 21.2798 2.54321 22 2.37626C21.7369 2.75896 21.6067 3.13909 21.3356 3.30861C20.1051 4.07657 19.9696 5.19384 19.8792 6.49604C19.2786 15.1286 9.02005 20.6636 1.08166 16.6876C0.818553 16.5669 0.58734 16.3871 0.0956754 16.0686Z"
+                                        fill="#2B3A57"/>
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.506 19.6507C18.3037 19.6507 17.0935 19.6507 15.6465 19.6507C15.6465 18.9535 15.657 18.2748 15.6438 17.596C15.6044 15.6255 15.5886 13.6523 15.4965 11.6817C15.4439 10.5689 14.773 9.8559 13.6707 9.80065C12.5578 9.74277 11.5265 10.0953 11.2766 11.3713C11.0924 12.3079 11.0266 13.2734 11.0029 14.2284C10.9608 15.9806 10.9924 17.7354 10.9924 19.5955C9.66908 19.5955 8.39047 19.5955 7.04871 19.5955C7.01977 19.2219 6.96979 18.8825 6.96716 18.5431C6.9619 14.602 6.96452 10.6636 6.96452 6.63832C8.28786 6.63832 9.49545 6.63832 10.7425 6.63832C10.7951 7.03821 10.8477 7.42232 10.9188 7.9485C11.145 7.8038 11.345 7.71962 11.4923 7.57755C13.0235 6.09635 14.8309 5.99638 16.7462 6.54887C18.6194 7.09083 19.4034 8.56939 19.4744 10.3216C19.5954 13.3787 19.506 16.4437 19.506 19.6507Z"
+                                        fill="#2B3A57"/>
+                                    <path
+                                        d="M0.389648 6.58789C1.71036 6.58789 2.93109 6.58789 4.25969 6.58789C4.25969 10.9262 4.25969 15.2304 4.25969 19.6187C2.99949 19.6187 1.74719 19.6187 0.389648 19.6187C0.389648 15.333 0.389648 11.0288 0.389648 6.58789Z"
+                                        fill="#2B3A57"/>
+                                    <path
+                                        d="M4.65995 2.31572C4.66785 3.57592 3.59182 4.66774 2.33162 4.68089C1.10562 4.69405 -0.0309281 3.53909 0.000642632 2.31572C0.0322134 1.13708 1.11615 0.0242119 2.25795 0.000533863C3.45764 -0.028406 4.65206 1.12393 4.65995 2.31572Z"
+                                        fill="#2B3A57"/>
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.4446 12.7051C12.281 14.0968 12.2862 14.1047 10.905 15.4675C10.0316 16.3304 9.17916 17.2197 8.24257 18.0063C6.17469 19.7374 3.35174 19.577 1.46802 17.6853C-0.334145 15.8753 -0.526206 12.9629 1.16546 10.995C2.32831 9.64007 3.67006 8.44038 5.05654 7.05127C5.50906 7.56166 5.90633 8.00628 6.54037 8.72189C5.45381 9.71373 4.29623 10.6451 3.29386 11.7211C1.74426 13.3786 2.0968 15.6543 3.94895 16.604C5.12233 17.2039 6.39567 16.954 7.54537 15.8727C8.08734 15.3623 8.62141 14.8387 9.12391 14.2889C9.59484 13.7732 10.0237 13.2155 10.4446 12.7051Z"
+                                        fill="#2B3A57"/>
+                                    <path
+                                        d="M12.7175 10.4134C13.7146 9.50837 14.7854 8.61124 15.772 7.62728C17.2401 6.16451 17.3242 4.36235 16.0614 3.10215C14.8749 1.91825 13.0622 1.99717 11.6178 3.37576C10.6076 4.33867 9.67624 5.38839 8.55548 6.56177C8.0635 5.9935 7.67675 5.54362 7.10059 4.87537C8.64229 3.47573 10.0367 1.88404 11.7362 0.744867C13.8357 -0.66266 16.3982 0.0134789 18.0504 2.02611C19.5184 3.81512 19.5079 6.45654 17.9557 8.2929C17.1664 9.22687 16.2824 10.0793 15.4247 10.9501C14.1303 12.2577 14.1224 12.2524 12.7175 10.4134Z"
+                                        fill="#2B3A57"/>
+                                    <path
+                                        d="M7.28186 13.0684C7.02404 12.6685 6.6978 12.1607 6.45312 11.7793C8.14216 10.085 9.92064 8.29859 11.8307 6.3833C12.0832 6.68848 12.4805 7.16994 12.8015 7.55405C11.0388 9.31675 9.25766 11.0952 7.28186 13.0684Z"
+                                        fill="#2B3A57"/>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="commentary-view__main">
+                        <h1>Crunch time for CORSIA</h1>
+                        <div class="commentary-view__date">
+                            <span>Updated: Sep 22</span>
+                            <span>5 min read</span>
+                        </div>
+                        <p>When the Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA) releases
+                            its anticipated update in the coming weeks, it will be closely scrutinized not only by
+                            airlines and the aviation industry, but by corporates and carbon trading markets
+                            worldwide.</p>
+                        <p>How will the scheme adapt to the unique circumstances of the global pandemic? How far will
+                            its new rules push mandatory versus voluntary carbon reduction measures? What new timelines
+                            will apply?</p>
+                        <p>This last question is of particular interest to airlines. Whereas 2019 was a bumper year for
+                            flying, with the whole industry going at full speed and new routes springing up, 2020 was
+                            the opposite: a virtual shut-down. Therefore, if 2020 was used as the baseline for emissions
+                            then airlines would have been hammered, since they will clearly emit multiple times the
+                            amount of 2020 carbon in future.</p>
+                        <p>So only 2019 was used as the baseline, to soften the future financial impact and give
+                            airlines a higher baseline from which to calculate their carbon liabilities. More recently,
+                            airlines recovered substantially in 2021 and through into 2022, although on average they’re
+                            still not as busy as in 2019. CORSIA is likely to remind them that, once they reach 101 per
+                            cent of their 2019 activity, they’ll need to start hedging their carbon emissions.</p>
+                        <h2>Oversupply reversed</h2>
+                        <p>Whereas in the early days of CORSIA, following its launch in 2016, the airlines had the
+                            market to themselves,
+                            carbon credits are now far more fiercely in demand, as listed companies around the world
+                            seek to comply with net carbon zero regulations and commitments. In 2019, airline financing
+                            experts predicted that the market would be oversupplied with carbon credits, with 140
+                            million tonnes of overhang. That’s now completely reversed.</p>
+                        <p>This demand is a reflection of CORSIA’s credibility, through creating products in which
+                            people want to invest. What will be interesting is how CORSIA responds, potentially
+                            including newer vintages of products and widening its remit further. As a major contributor
+                            to global carbon emissions, aviation as a sector needs to supply new products, new
+                            issuances; it needs to lead the market.</p>
+                        <p><a href="javascript:void(0)">ICAO’s most recent predictions</a> for the cost of
+                            CORSIA-eligible emissions units from now to 2026 vary between a low range of $1.20 to $1.90,
+                            a mid-range of $3.10 to $4.90 and a dramatically higher range of $21 to $32. Presuming that
+                            this pressure of demand continues, we expect the cost of units will track closer to the
+                            higher estimate.</p>
+                        <h2>From PR to treasury</h2>
+                        <p class="paragraph">What I anticipate happening is that, from 2023 onwards, carbon trading will move from a PR
+                            responsibility - where companies take part in order to satisfy reputational issues and to
+                            comply with their ESG principles - to a treasury and accounting responsibility, as CORSIA
+                            and other schemes evolve from voluntary to mandatory provisions.</p>
+                        <p>It will be interesting to see whether CORSIA revises its schedules for its phased
+                            implementation of mandatory action, in view of the pandemic, alongside the sharp rises in
+                            fuel costs following Russia’s invasion of Ukraine. The pilot phase is meant to end in 2023,
+                            followed by a voluntary first phase from 2024-2026 and a second, more rigorous and
+                            compulsory phase from 2027-2035. The global economic environment has already dampened some
+                            companies’ willingness to fulfil their carbon commitments.</p>
+                        <h2>Carbon as a line item</h2>
+                        <p class="paragraph">For the airlines, charging an extra $4 on a passenger ticket for a carbon credit should
+                            become a minor line item. It really shouldn’t be hard for them to do, when they pay tens or
+                            even hundreds of dollars per ticket on fuel duties. The reality is that, if they don’t do
+                            it, they’ll be exposing themselves to additional risk. They need to treat carbon credits
+                            just as they treat food, fuel, tyres or any other running expense.</p>
+                        <p>If you look at companies like GE or Boeing, they spend massive resources seeking to make
+                            their aircraft 1 per cent more efficient. But then, if their flying operations increase by 5
+                            per cent, they’re naked by 4 per cent in carbon terms. That’s why they need to hedge,
+                            through buying credits.</p>
+                        <p>At ACX, we offer transparent, efficient carbon pricing and fees, where there’s a clear
+                            auditing system and fees of 80 basis points instead of 150 basis points. We’re taking the
+                            opacity out of carbon trading and offsetting, enabling airlines and other businesses to
+                            fulfil their carbon reduction commitments.</p>
+                        <h2>No get out of jail cards</h2>
+                        <p>This professionalization is something CORSIA helped to pioneer: when the International Civil
+                            Aviation Organization (ICAO) announced the scheme, they laid out the parameters and these
+                            have gradually been accepted by other markets. Although so much has changed over the past 24
+                            months, CORSIA was the foundation. Now, as listed companies begin to comply with their
+                            commitments, CORSIA needs to take the lead once again. Presuming the published schedule
+                            remains intact, after 2024, there should be no more ‘get out of jail’ cards.</p>
+                        <p>In the shipping sector, for example, there’s no equivalent of CORSIA so far. I think the
+                            International Maritime Organization will accept their framework, along with other industries
+                            and nations, as they figure out what they stand to gain or lose.</p>
+                        <p class="paragraph">Although we at ACX concentrate on keeping costs down for carbon traders,
+                            the underlying
+                            ethos is that carbon should be expensive: the idea is to make people pay attention and
+                            change their behaviour. Once businesses see that they can buy and sell carbon credits
+                            directly through ACX, they get a lot more transparency in the transaction. They’re no longer
+                            paying onerous fees to brokers for things they don’t recognize.</p>
+                        <p>Overall, we believe that CORSIA set a good standard for carbon reduction and deserves kudos
+                            for surviving through the past six years of challenges. We’d like to see it continue to
+                            evolve and broaden its remit, as the threats from climate change grow ever clearer and more
+                            urgent.</p>
+                    </div>
+                    <div class="commentary-view__footer">
+                        <p>Written with the help of Momo Media</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+${require('../parts/footer.html')}
+
+</body>
+</html>

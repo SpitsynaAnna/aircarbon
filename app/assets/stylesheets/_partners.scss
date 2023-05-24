@@ -1,0 +1,565 @@
+.partners-main{
+  .container-lg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 208px;
+    padding-bottom: 176px;
+    @include bp(md) {
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+    @include bp(xs) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+}
+
+.partners-main__title{
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 60px;
+  color: #fff;
+  @include bp(xs) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.partners-slider__section{
+  background-color: #F2F2F2;
+  padding: 65px 0 80px;
+  overflow: hidden;
+  @include bp(xs) {
+    padding: 50px 0;
+  }
+  .container-lg{
+    @include bp(sm) {
+      padding: 0;
+    }
+  }
+}
+
+.partners-subtitle{
+  display: block;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 42px;
+  color: $dark-blue;
+  text-align: center;
+  @include bp(xs) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.partners-slider__wrapper{
+  width: 1350px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.partners-slider{
+  .slick-list{
+    padding: 40px 57px;
+    @include bp(lg) {
+      padding: 40px 45px;
+    }
+    @include bp(md) {
+      padding: 40px 20px;
+    }
+    @include bp(sm) {
+      padding: 40px 0;
+      overflow: visible;
+    }
+    @include bp(xs) {
+      padding: 30px 0;
+    }
+  }
+  .slick-track{
+    display: flex;
+  }
+  .slick-slide{
+    padding: 0 15px;
+    height: inherit;
+    &.slick-active{
+      .slide{
+        opacity: 1;
+        box-shadow: 1px 1px 50px 5px rgba(4, 52, 81, 0.08);
+      }
+    }
+    >div{
+      height: 100%;
+    }
+  }
+  .slide{
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 17px 43px 38px;
+    opacity: 0;
+    transition: ease-in-out .3s;
+    @include bp(lg) {
+      padding: 15px 25px 20px;
+    }
+  }
+  .slick-arrow{
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    border: none;
+    background: transparent;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    @include bp(lg) {
+      display: flex;
+      justify-content: flex-start;
+    }
+    &:before{
+      content: '';
+      cursor: pointer;
+      -webkit-mask: url("../images/icons/arrow-left.svg");
+      mask: url("../images/icons/arrow-left.svg");
+      width: 27px;
+      height: 27px;
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      background-color: $blue;
+    }
+    &.slick-prev{
+      left: 10px;
+    }
+    &.slick-next{
+      right: 10px;
+      @include bp(lg) {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &:before{
+        transform: scale(-1, 1);
+      }
+    }
+    &.slick-disabled{
+      &:before{
+        background-color: $grey;
+      }
+    }
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 0;
+    li {
+      height: 22px;
+      display: flex;
+      align-items: center;
+      margin-right: 12px;
+      &:first-child {
+        button {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+        button {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      &.slick-active {
+        button {
+          width: 22px;
+          height: 22px;
+          background-color: $green;
+        }
+      }
+      button {
+        border: none;
+        background-color: $grey;
+        font-size: 0;
+        border-radius: 50%;
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+}
+
+.partners-slider__logo{
+  height: 132px;
+  margin-bottom: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include bp(sm) {
+    height: 100px;
+  }
+  @include bp(xs) {
+    height: 64px;
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.partners-slider__title{
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark-blue;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  @include bp(xs) {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.partners-slider__text{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+  color: $blue;
+  margin-bottom: 33px;
+  @include bp(xs) {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+}
+
+.partners-slider__footer{
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: $green;
+  @include bp(xs) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  strong{
+    font-weight: 700;
+    display: block;
+  }
+}
+
+.clients-slider__section{
+  padding: 40px 0 70px;
+  overflow: hidden;
+  @include bp(xs) {
+    padding: 50px 0;
+  }
+  .partners-subtitle{
+    margin-bottom: 20px;
+    @include bp(xs) {
+      margin-bottom: 35px;
+    }
+  }
+  .container-lg{
+    @include bp(sm) {
+      padding: 0;
+    }
+  }
+}
+
+.clients-slider__wrapper{
+  width: 1350px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.clients-slider{
+  .slick-list{
+    padding: 40px 57px;
+    @include bp(lg) {
+      padding: 40px 45px;
+    }
+    @include bp(md) {
+      padding: 40px 20px;
+    }
+    @include bp(sm) {
+      padding: 40px 0;
+      overflow: visible;
+    }
+    @include bp(xs) {
+      padding: 0;
+    }
+  }
+  .slick-slide{
+    padding: 0 15px;
+    &.slick-active{
+      .slide{
+        opacity: 1;
+      }
+    }
+    &:nth-child(even){
+      .slide{
+        padding-top: 0;
+      }
+      .clients-slide__top{
+        border-color: $green;
+        &:before{
+          border-color: transparent $green transparent transparent;
+          left: auto;
+          right: 64px;
+          transform: scale(-1, 1);
+          @include bp(xs) {
+            right: 45px;
+          }
+        }
+        &:after{
+          left: auto;
+          right: 64px;
+          transform: scale(-1, 1);
+          @include bp(xs) {
+            right: 45.5px;
+          }
+        }
+        >svg{
+          left: auto;
+          right: 82px;
+          @include bp(xs) {
+            right: 30px;
+          }
+        }
+      }
+      .clients-slide__bot{
+        left: auto;
+        right: 0;
+        padding-left: 0;
+        padding-right: 130px;
+        text-align: right;
+        @include bp(xs) {
+          padding: 20px;
+        }
+      }
+    }
+    >div{
+      height: 100%;
+    }
+  }
+  .slide{
+    opacity: 0;
+    position: relative;
+    transition: ease-in-out .3s;
+    padding-top: 30px;
+    padding-bottom: 72px;
+    @include bp(md) {
+      padding-top: 0;
+    }
+    @include bp(xs) {
+      padding-bottom: 0;
+    }
+  }
+  .slick-arrow{
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    border: none;
+    background: transparent;
+    padding: 0;
+    top: calc(50% - 30px);
+    transform: translateY(-50%);
+    @include bp(lg) {
+      display: flex;
+      justify-content: flex-start;
+    }
+    &:before{
+      content: '';
+      cursor: pointer;
+      -webkit-mask: url("../images/icons/arrow-left.svg");
+      mask: url("../images/icons/arrow-left.svg");
+      width: 27px;
+      height: 27px;
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      background-color: $blue;
+    }
+    &.slick-prev{
+      left: 10px;
+    }
+    &.slick-next{
+      right: 10px;
+      @include bp(lg) {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &:before{
+        transform: scale(-1, 1);
+      }
+    }
+    &.slick-disabled{
+      &:before{
+        background-color: $grey;
+      }
+    }
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto 0;
+    @include bp(xs) {
+      padding-top: 30px;
+    }
+    li {
+      height: 22px;
+      display: flex;
+      align-items: center;
+      margin-right: 12px;
+      &:first-child {
+        button {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+        button {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      &.slick-active {
+        button {
+          width: 22px;
+          height: 22px;
+          background-color: $green;
+        }
+      }
+      button {
+        border: none;
+        background-color: $grey;
+        font-size: 0;
+        border-radius: 50%;
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+}
+
+.clients-slide__top{
+  padding: 47px 43px 62px;
+  background-color: #fff;
+  border: 2px solid $blue;
+  box-shadow: 1px 1px 50px rgba(4, 52, 81, 0.1);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+  color: $blue;
+  position: relative;
+  z-index: 1;
+  @include bp(lg) {
+    padding: 25px 20px 45px;
+  }
+  @include bp(xs) {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 25px 20px 90px;
+  }
+  &:before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 37px 37px 0;
+    border-color: transparent $blue transparent transparent;
+    left: 64px;
+    top: calc(100% + 1px);
+    @include bp(xs) {
+      display: none;
+      left: 45px;
+    }
+  }
+  &:after{
+    position: absolute;
+    content: '';
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 35px 35px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 64.5px;
+    top: calc(100% - 1px);
+    @include bp(xs) {
+      display: none;
+      left: 45.5px;
+    }
+  }
+  >svg{
+    position: absolute;
+    top: 18px;
+    left: 82px;
+    z-index: -1;
+    @include bp(lg) {
+      height: 80px;
+      width: fit-content;
+    }
+    @include bp(xs) {
+      left: 30px;
+      height: 60px;
+    }
+  }
+}
+
+.clients-slide__bot{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 130px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: $green;
+  @include bp(xs) {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 20px;
+    left: auto;
+    right: 0;
+    z-index: 1;
+    text-align: right;
+  }
+  strong{
+    display: block;
+    font-weight: 700;
+  }
+}

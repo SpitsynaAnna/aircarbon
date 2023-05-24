@@ -1,0 +1,224 @@
+.work-section {
+  position: relative;
+  padding-top: 243px;
+  padding-bottom: 224px;
+  @include bp(lg) {
+    padding: 160px 0 140px;
+  }
+  @include bp(xs) {
+    padding: 90px 0;
+  }
+  & > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.work-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  & + .work-wrapper {
+    margin-top: 194px;
+    @include bp(md) {
+      margin-top: 100px;
+    }
+  }
+  & > div {
+    width: 50%;
+    @include bp(md) {
+      width: 100%;
+    }
+    &:first-child {
+      @include bp(xxl) {
+        padding-right: 30px;
+      }
+      @include bp(xs) {
+        padding-right: 0;
+      }
+    }
+    &:last-child {
+      position: relative;
+      padding-left: 56px;
+      margin-top: -40px;
+      @include bp(md) {
+        margin-top: 40px;
+        padding-left: 70px;
+      }
+      @include bp(xs) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.work-suptitle {
+  display: block;
+  width: fit-content;
+  margin-bottom: 57px;
+  padding-right: 76px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $green-accent;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  @include bp(xs) {
+    font-size: 22px;
+    padding-bottom: 25px;
+    padding-right: 37px;
+    padding-left: 37px;
+    margin: 0 auto 45px;
+  }
+}
+
+.work-title {
+  display: block;
+  margin-bottom: 24px;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #fff;
+  @include bp(xs) {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+.work-text {
+  width: 520px;
+  max-width: 100%;
+  margin: 0 0 73px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+  @include bp(md) {
+    width: 100%;
+  }
+  @include bp(xs) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 45px;
+  }
+}
+
+.work-link {
+  max-width: 370px;
+  letter-spacing: 3px;
+}
+
+.work-quot {
+  margin-bottom: 13px;
+  margin-left: 6px;
+}
+
+.work-slider {
+  @include bp(xs) {
+    padding-bottom: 70px;
+  }
+  & .slide {
+    max-width: 650px;
+    @include bp(xxxl) {
+      padding-right: 70px;
+    }
+    @include bp(md) {
+      max-width: 100%;
+    }
+    @include bp(xs) {
+      width: 100%;
+      padding-right: 0;
+    }
+    & p {
+      margin: 0 0 66px;
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: 600;
+      color: #fff;
+      @include bp(lg) {
+        font-size: 25px;
+        line-height: 1.2;
+        margin-bottom: 45px;
+      }
+      @include bp(xs) {
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+    }
+    & span {
+      display: block;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 700;
+      color: #fff;
+      @include bp(xs) {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  }
+  &:after{
+    position: absolute;
+    content: '';
+    width: calc(100% - 90px);
+    left: 45px;
+    bottom: 22px;
+    display: none;
+    height: 2px;
+    background-color: #fff;
+    @include bp(xs) {
+      display: block;
+      }
+  }
+}
+
+.work-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  z-index: 3;
+  @include bp(xs) {
+    top: auto;
+    transform: none;
+    bottom: 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+  svg{
+    @include bp(xs) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &.slick-disabled {
+    opacity: 0;
+    pointer-events: none;
+    @include bp(md) {
+      opacity: .5;
+    }
+  }
+  &.arrow-next {
+    right: 0;
+  }
+  &.arrow-prev {
+    left: -90px;
+    @include bp(lg) {
+      left: -30px;
+    }
+    @include bp(md) {
+      left: 0;
+    }
+  }
+}

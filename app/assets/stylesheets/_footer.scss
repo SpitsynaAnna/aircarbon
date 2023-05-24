@@ -1,0 +1,161 @@
+.footer {
+  background: $gradient;
+  padding-top: 124px;
+  padding-bottom: 120px;
+  @include bp(lg) {
+    padding: 90px 0;
+  }
+  @include bp(xs) {
+    padding: 60px 0;
+  }
+}
+
+.footer__top {
+  display: flex;
+  align-items: end;
+  margin-bottom: 87px;
+  @include bp(xxl) {
+    justify-content: space-between;
+  }
+  @include bp(lg) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include bp(xs) {
+    margin-bottom: 45px;
+  }
+}
+
+.footer__left {
+  margin-right: 152px;
+  @include bp(xxl) {
+    margin-right: 0;
+  }
+  @include bp(lg) {
+    margin-bottom: 60px;
+  }
+  @include bp(xs) {
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 76px;
+  @include bp(xs) {
+    margin-bottom: 30px;
+  }
+  a {
+    display: flex;
+    margin-bottom: 30px;
+    @include bp(xs) {
+      margin-bottom: 20px;
+      width: 140px;
+      height: 48px;
+    }
+    img{
+      @include bp(xs) {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  span {
+    display: block;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+    @include bp(xs) {
+      font-size: 16px;
+    }
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  gap: 81px;
+  @include bp(sm) {
+    gap: 45px;
+  }
+  @include bp(xs) {
+    gap: 0;
+    flex-direction: column;
+  }
+  >a {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    @include bp(sm) {
+      gap: 16px;
+    }
+    @include bp(xs) {
+      font-size: 16px;
+    }
+    +a{
+      @include bp(xs) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.footer__right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 105px;
+  @include bp(xxl) {
+    gap: 60px;
+  }
+  @include bp(xs) {
+    flex-direction: column;
+    gap: 0;
+  }
+  > div {
+    +div{
+      @include bp(xs) {
+        margin-top: 45px;
+      }
+    }
+    span {
+      display: block;
+      margin-bottom: 18px;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      @include bp(xs) {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 600;
+      color: #fff;
+      @include bp(xs) {
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+  }
+}
+
+.footer__bot {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+
+

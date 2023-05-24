@@ -1,0 +1,385 @@
+.main-screen.commentary-view-main {
+  min-height: 563px;
+  @include bp(xs) {
+    min-height: 380px;
+    }
+}
+
+.commentary-view {
+  padding-bottom: 155px;
+  @include bp(sm) {
+    padding-bottom: 80px;
+  }
+  @include bp(xs) {
+    padding-bottom: 40px;
+  }
+
+  & .container-lg {
+    margin-top: -328px;
+    @include bp(xs) {
+      margin-top: -160px;
+      }
+  }
+}
+
+.commentary-view__wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1028px;
+  margin: 0 auto;
+}
+
+.commentary-view__back {
+  margin-left: 60px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 60px;
+  color: #fff !important;
+  text-decoration: none !important;
+  &:hover {
+    color: $green !important;
+  }
+  @include bp(sm) {
+    margin-left: 0;
+  }
+  @include bp(xs) {
+    font-size: 16px;
+    }
+}
+
+.commentary-view__inner {
+  position: relative;
+  margin-top: 10px;
+  padding: 62px 58px 35px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  box-shadow: $shadow;
+  @include bp(sm) {
+    padding: 20px 30px 40px;
+    padding-top: 50px;
+  }
+  @include bp(xs) {
+    margin-top: 0;
+    padding: 20px 15px 30px;
+  }
+}
+
+.commentary-view__social {
+  position: absolute;
+  top: 62px;
+  right: -28px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 11px;
+  @media (max-width: 1135px) {
+    top: -31px;
+    right: 58px;
+    flex-direction: row;
+  }
+  @include bp(sm) {
+    flex-wrap: wrap;
+    right: 30px;
+    }
+  @include bp(xs) {
+    position: static;
+    margin-bottom: 30px;
+    }
+
+  & li {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    @include bp(xs) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    box-shadow: $shadow;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $grey;
+    }
+    & svg {
+      max-height: 16px;
+    }
+  }
+}
+
+.commentary-view__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+  @include bp(sm) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+.commentary-view__author {
+  display: flex;
+  align-items: center;
+  @include bp(sm) {
+      order: 1;
+    align-self: start;
+    }
+}
+
+.commentary-view__author-pic {
+  flex-shrink: 0;
+  margin-right: 22px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  @include bp(xs) {
+    margin-right: 15px;
+    }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.commentary-view__author-name {
+  max-width: 400px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: $dark-blue;
+  @include bp(xs) {
+    font-size: 16px;
+    }
+}
+
+.commentary-view__search {
+  width: 100%;
+  max-width: 293px;
+  @include bp(sm) {
+    margin-bottom: 30px;
+    align-self: end;
+    }
+  @media (max-width: 420px) {
+    max-width: 100%;
+    }
+
+  & form {
+    position: relative;
+
+    & .input {
+      padding-left: 50px;
+    }
+
+    & button {
+      position: absolute;
+      left: 14px;
+      top: calc(50% + 2px);
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      border: none;
+    }
+  }
+}
+
+.commentary-view__date {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-bottom: 30px;
+  @include bp(xs) {
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    }
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #5CADA0 0%, #396BAB 100%);
+  }
+
+  & span {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $dark-blue;
+    @include bp(xs) {
+      font-size: 14px;
+      }
+
+
+    & + span {
+      &:before {
+        content: "";
+        flex-shrink: 0;
+        display: block;
+        width: 5px;
+        height: 5px;
+        margin: 0 11px 3px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background-color: $green-accent;
+        @include bp(xs) {
+          width: 4px;
+          height: 4px;
+          margin: 0 7px 0;
+          }
+      }
+    }
+  }
+}
+
+.commentary-view__main {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: $dark-blue;
+  margin-top: 25px;
+  position: relative;
+  padding-bottom: 26px;
+  @include bp(xs) {
+    font-size: 14px;
+    line-height: 120%;
+    margin-top: 15px;
+  }
+
+  * {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 50px;
+    color: $blue-accent;
+
+    @include bp(xs) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  h2, h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: $dark-blue;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    @include bp(xs) {
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 25px;
+      margin-bottom: 5px;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 55px;
+    max-width: 100%;
+    object-fit: contain;
+    @include bp(xs) {
+      margin-bottom: 30px;
+    }
+  }
+
+  p {
+    margin-bottom: 26px;
+    text-align: justify;
+
+    &.paragraph {
+      margin-bottom: 0;
+    }
+
+    @include bp(xs) {
+      margin-bottom: 15px;
+    }
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  ul {
+    margin-bottom: 25px;
+    padding-left: 18px;
+    list-style-type: disc;
+    @include bp(xs) {
+      margin-bottom: 15px;
+    }
+  }
+
+  ol {
+    margin-bottom: 25px;
+    padding-left: 18px;
+    list-style-type: decimal;
+    @include bp(xs) {
+      margin-bottom: 15px;
+    }
+  }
+
+  a {
+    color: $green;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    font-weight: 700;
+    @include bp(xs) {
+      word-break: break-all;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $green;
+    }
+  }
+}
+
+.commentary-view__footer {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: justify;
+
+  & p {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: justify;
+    color: $dark-blue;
+    @include bp(xs) {
+      font-size: 14px;
+      line-height: 120%;
+    }
+  }
+
+}

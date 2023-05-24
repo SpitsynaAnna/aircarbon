@@ -1,0 +1,25 @@
+.section-partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 68px;
+  padding-bottom: 75px;
+  padding-left: 100px;
+  padding-right: 100px;
+  @include bp(lg) {
+    padding: 80px 30px;
+  }
+  @include bp(sm) {
+    padding: 80px 0;
+  }
+  @include bp(xs) {
+    padding: 60px 0;
+  }
+  /*& ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px 101px;
+  }*/
+}

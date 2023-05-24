@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>AirCarbon</title>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon.png" type="image/png">
+    <meta name="theme-color" content="#06849B">
+    <meta name="msapplication-navbutton-color" content="#06849B">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#06849B">
+</head>
+<body>
+
+${require('../parts/header.html')}
+<main class="main">
+    <div class="section main-section">
+        <picture>
+            <source srcset="../../images/pixel.webp" data-original="../../images/main-bg.webp" class="lazy-web"
+                    type="image/webp">
+            <source srcset="../../images/pixel.jpg" data-original="../../images/main-bg.jpg" class="lazy-web"
+                    type="image/jpg">
+            <img src="../../images/pixel.jpg" data-original="../../images/main-bg.jpg" class="lazy" alt="AirCarbon">
+        </picture>
+        <div class="container-lg">
+            <div class="main-topline">
+                <div class="topline-slider slick-slider"
+                     data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "centerMode": true, "centerPadding": 0, "autoplay": true, "arrows": false, "dots": false, "infinite": true, "responsive":[{"breakpoint":1679,"settings":{"slidesToShow": 3, "variableWidth": true}}, {"breakpoint":574,"settings":{"slidesToShow": 1, "variableWidth": false}}]}'>
+                    <div class="slide">
+                        <span>8/10/2022 </span>
+                        <span>SDT TRADING AT: USD$8.75</span>
+                    </div>
+                    <div class="slide">
+                        <span>8/10/2022 </span>
+                        <span>HOT Trading at: USD$9.25</span>
+                    </div>
+                    <div class="slide">
+                        <span>8/10/2022 </span>
+                        <span>FCC TRADING AT: USD$9.05</span>
+                    </div>
+                    <div class="slide">
+                        <span>8/10/2022 </span>
+                        <span>GNT+ Trading at: USD$8.15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg">
+            <div class="main-top">
+                <h1>Our <span>vision</span> is a world where sustainability and the global economy work in
+                    harmony.
+                </h1>
+                <span>FPO: ANIMATED GIF FadES BETWEEN OLD AND NEW LOGO</span>
+            </div>
+        </div>
+        <div class="main-midline">
+            AirCarbon Exchange is now ACX
+        </div>
+        <div class="container-lg">
+            <div class="main-bot">
+                <div class="main-bot__inner">
+                    <div>Governments and companies worldwide are pledging to achieve
+                        net zero emissions of greenhouse gases, and many executives say their organizations are
+                        concerned about climate change.
+                    </div>
+                    <div>Voluntary carbon markets provide a path for producers, brokers, governments, and corporations
+                        to get to net zero. But today’s platforms have remained opaque, inefficient, and fragmented.
+                        Until now.
+                    </div>
+                </div>
+                <div class="main-bot__text">Getting to net zero will require <span>total business transformation.</span>
+                </div>
+                <div class="main-bot__contacts">
+                    <a href="javascript:void(0)">CONTACT US</a>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="44" height="44" viewBox="0 0 44 44">
+                                    <defs>
+                                        <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%"
+                                                 viewBox="0 0 309 310">
+                                            <image width="309" height="310"
+                                                   xlink:href="data:image/png;base64,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"/>
+                                        </pattern>
+                                    </defs>
+                                    <rect id="f_logo_RGB-White_144" width="44" height="44" fill="url(#pattern)"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a href="javascript:void(0)" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="44" height="44" viewBox="0 0 44 44">
+                                <image id="In-White-128" width="44" height="44"
+                                       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAQAAABpN6lAAAADCklEQVR42u3dwUuUQRzG8UkxF7IoCoNwI+sUUeSlAgO1S4qXiM5Fda9T8GYXJfCwl0AI8tIpr17UootLLOSlCBTqDzBWNMwOWhuo3w5GLbarM7sL7cw8z3nfYd7PvvvuzG9f9mfMn5AmIUeedULNOnlyJKTN9tBMhgKxpECG5uLTb2WG2DJD6993P77T3yLYugrIEGsyW7e+QrQABdKGhJiTGHJRA+QM+agB8ibgZY/V0sgQeQQgAAEIQAACcMsaWcYYYYwsa7EBZOknVVRJSNFPNhaAJfpMydDHUvgAsyUqacX1xNmwAfK0mR1Dm5/bKluAHrNr6AkXYNJYhclQAbotAbrDBFim0RKgkeUQASaMdZgIEWDUAWA0RIBhB4DhEAGexX4FRH8PiP5bALosAbpCXQhNhPoB0F5Au0HVAxxeu0hvmdPvZTGGkhjAdIma4DQeR1VhIo8ABCAAAQigjrPCFA+5SgdpUrTQzgX6ecArVkMHWOU5l9lTdvHdRCcj1a9DLAEst8MVHvnPQUvcp8XqyCMMVVeEqT+AHwyx3ziEfTwNB+A9p00F4QbfQgB4QpOpMJzknd8AG9wzVYWDfPQZ4I6pOpxwr0vUC8CgqUm4yHcfAd7SYGoUbvoIcNzUMG4VqroAqG04w0bUAMYwHjvApcgBjOFT7ACDQQDQxGHbn+a3HXnOawAOcJdxFtkENvnMC66XrwyUHKGBFU8BSJGU3OHP0ek0zksvAWjnQ9lJ/OSWw0iPPQTgPF93nMYGV6zHuu0dAMeY33UiCxyq7eM69QTwxmoqA5ajnfIMgGuW31sL7LUa76hvAPbVHKtn1mjxCoCzDjvYR5YrAa8ABhwApiqfTf0CvHYAmA0RYM4BYD5EgC8OAGshAmw61fECBEAAAhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAH8b4BwIwABCEAAAhCAAGIGiL7ZWvTt9qJvuBh9y83Ym65G33ZXjZfVetuo+fpvhDQJOfIBL43WyZMjKf6T8F8a8v0TcgvzDgAAAABJRU5ErkJggg=="/>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section we-are-section">
+        <picture>
+            <source srcset="../../images/pixel.webp" data-original="../../images/we-are-bg.webp" class="lazy-web"
+                    type="image/webp">
+            <source srcset="../../images/pixel.jpg" data-original="../../images/we-are-bg.jpg" class="lazy-web"
+                    type="image/jpg">
+            <img src="../../images/pixel.jpg" data-original="../../images/we-are-bg.jpg" class="lazy" alt="AirCarbon">
+        </picture>
+        <div class="container-lg">
+            <span class="we-are-title">WE ARE</span>
+            <p class="we-are-top-text">The <span>global digital exchange</span> that powers the future of environmental
+                markets.</p>
+            <div class="we-are-items">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42.723" height="42.786" viewBox="0 0 42.723 42.786">
+                        <path id="Контур_13" data-name="Контур 13"
+                              d="M24.111-340.75h0A21.4,21.4,0,0,0,2.75-319.357a21.4,21.4,0,0,0,21.361,21.393,21.4,21.4,0,0,0,21.361-21.393A21.4,21.4,0,0,0,24.111-340.75Zm20.207,20.815H35.081c-.173-7.806-3.579-15.091-9.122-19.543A20.254,20.254,0,0,1,44.318-319.935Zm-20.784,0H14.3c.173-7.748,3.637-14.917,9.237-19.08Zm0,1.156v19.08c-5.6-4.221-9.064-11.39-9.237-19.08Zm1.155,0h9.237c-.173,7.748-3.637,14.917-9.237,19.08Zm0-1.156v-19.08c5.6,4.221,9.064,11.39,9.237,19.08Zm-2.425-19.543c-5.542,4.452-8.949,11.737-9.122,19.543H3.9A20.254,20.254,0,0,1,22.264-339.478ZM3.9-318.779h9.237c.173,7.806,3.579,15.091,9.122,19.543A20.254,20.254,0,0,1,3.9-318.779Zm22.054,19.543c5.542-4.452,8.949-11.737,9.122-19.543h9.237a20.209,20.209,0,0,1-17.955,19.543Z"
+                              transform="translate(-2.75 340.75)" fill="#fff" fill-rule="evenodd"/>
+                    </svg>
+                    <span>NATIONS</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33.912" height="46.384" viewBox="0 0 33.912 46.384">
+                        <path id="Контур_15" data-name="Контур 15"
+                              d="M28.168-409.7c-.749-.359-1.609-.735-2.5-1.084.989-1.663,4.141-7.8,1.552-14.585h.728a.565.565,0,0,0,.565-.566.565.565,0,0,0-.565-.566H26.526v-.988a9.263,9.263,0,0,0-4.89-7.625l-.322-.173a2.663,2.663,0,0,0-2.564-1.962H15.678a2.663,2.663,0,0,0-2.57,1.98l-.292.157a9.264,9.264,0,0,0-4.89,7.625v.986H6.468a.565.565,0,0,0-.565.566.565.565,0,0,0,.565.566H7.2c-2.587,6.783.557,12.916,1.547,14.583-.685.268-1.317.54-1.917.813l-.294.132a19.453,19.453,0,0,0-4.393,2.708,5.205,5.205,0,0,0-1.9,3.824v9.635l.252.17c2.639,1.759,9.794,2.64,16.889,2.64,7.123,0,14.189-.888,16.546-2.659l.226-.17v-9.628a5.2,5.2,0,0,0-1.895-3.813A19.044,19.044,0,0,0,28.168-409.7ZM9.054-427.419a8.189,8.189,0,0,1,4.3-6.7l.791,3.24a.509.509,0,0,0,.5.389h.14l.029-.007a.513.513,0,0,0,.36-.628l-.972-3.833a1.534,1.534,0,0,1,1.483-1.161h3.068a1.535,1.535,0,0,1,1.483,1.162l-.972,3.833a.282.282,0,0,0-.007.029.509.509,0,0,0,.39.6h.143a.509.509,0,0,0,.5-.389l.819-3.24a8.189,8.189,0,0,1,4.3,6.7v.916H9.054Zm9.853,30.9h9.516l.094.609v3.091a61.183,61.183,0,0,1-9.61.834Zm5.29-13.609,2.282.947,1.77,11.53H18.907v-3.281l4.07-9.7ZM5.906-395.913l.1-.61h9.514V-392a62.214,62.214,0,0,1-9.61-.878Zm4.494-14.3,1.045-.428,4.07,9.709v3.28H6.178l1.812-11.574,1.978-.811Zm8.353-15.066a35.212,35.212,0,0,1,5.8,4.117,7.351,7.351,0,0,1-7.585,7.11,7.351,7.351,0,0,1-7.094-6.875C11.538-421.22,16.761-422.34,18.752-425.282Zm-6.305,14.109a2.255,2.255,0,0,0,.8-1.726v-1.016a8.431,8.431,0,0,0,7.917,0v1.011a2.254,2.254,0,0,0,.808,1.733l-.447,1.066a16.642,16.642,0,0,1-8.628,0Zm12.147-.016-1.6-.662a1.127,1.127,0,0,1-.7-1.049v-1.737a8.47,8.47,0,0,0,3.392-6.773.566.566,0,0,0-.177-.411,30.1,30.1,0,0,0-4.69-3.548H26c2.825,6.788-.668,12.994-1.405,14.18ZM8.422-425.371h8.96c-2.388,2.586-8.1,3.394-8.162,3.4a.566.566,0,0,0-.491.56,8.468,8.468,0,0,0,3.387,6.768v1.742a1.127,1.127,0,0,1-.7,1.046l-1.6.655C9.073-412.407,5.6-418.6,8.422-425.371ZM1.381-403.3a4.014,4.014,0,0,1,1.5-2.975A17.962,17.962,0,0,1,6.764-408.7L4.785-396.045l-.006,2.933a12.743,12.743,0,0,1-3.4-1.181ZM16.646-391.98v-9.181l-3.2-7.626a18.523,18.523,0,0,0,7.526,0l-3.2,7.626v9.184Q17.209-391.975,16.646-391.98Zm16.385-2.294a11.186,11.186,0,0,1-3.384,1.223v-2.905L27.7-408.672a17.918,17.918,0,0,1,3.836,2.4,4.01,4.01,0,0,1,1.5,2.963Z"
+                              transform="translate(-0.25 437.25)" fill="#fff" fill-rule="evenodd"/>
+                    </svg>
+                    <span>SELLERS</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34.191" height="46.158" viewBox="0 0 34.191 46.158">
+                        <g id="Сгруппировать_407" data-name="Сгруппировать 407"
+                           transform="translate(-464.341 -2280.682)">
+                            <path id="Контур_17" data-name="Контур 17"
+                                  d="M30.167,17.724V-23.7H27.114V-27.25H7.577V-23.7H4.524V17.724H.25v1.184H34.441V17.724ZM8.8-26.066h17.1V-23.7H8.8ZM5.745-22.514h23.2V17.724H18.567v-6.5H16.124v6.5H5.745Z"
+                                  transform="translate(464.091 2307.932)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_19" data-name="Контур 19" d="M6.25-10.976H7.96V-15.25H6.25Z"
+                                  transform="translate(468.348 2316.446)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_21" data-name="Контур 21" d="M6.25-14.476H7.96V-18.75H6.25Z"
+                                  transform="translate(468.348 2313.963)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_23" data-name="Контур 23" d="M6.25-7.476H7.96V-11.75H6.25Z"
+                                  transform="translate(468.348 2318.93)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_25" data-name="Контур 25" d="M6.25-3.976H7.96V-8.25H6.25Z"
+                                  transform="translate(468.348 2321.413)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_27" data-name="Контур 27" d="M9.75-10.976h1.71V-15.25H9.75Z"
+                                  transform="translate(470.832 2316.446)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_29" data-name="Контур 29" d="M9.75-3.976h1.71V-8.25H9.75Z"
+                                  transform="translate(470.832 2321.413)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_31" data-name="Контур 31" d="M13.25-.476h1.71V-4.75H13.25Z"
+                                  transform="translate(473.314 2323.896)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_33" data-name="Контур 33" d="M13.25-17.976h1.71V-22.25H13.25Z"
+                                  transform="translate(473.314 2311.479)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_35" data-name="Контур 35" d="M9.75-7.476h1.71V-11.75H9.75Z"
+                                  transform="translate(470.832 2318.93)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_37" data-name="Контур 37" d="M9.75-14.476h1.71V-18.75H9.75Z"
+                                  transform="translate(470.832 2313.963)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_39" data-name="Контур 39" d="M9.75-17.976h1.71V-22.25H9.75Z"
+                                  transform="translate(470.832 2311.479)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_41" data-name="Контур 41" d="M6.25-17.976H7.96V-22.25H6.25Z"
+                                  transform="translate(468.348 2311.479)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_43" data-name="Контур 43" d="M6.25-.476H7.96V-4.75H6.25Z"
+                                  transform="translate(468.348 2323.896)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_45" data-name="Контур 45" d="M13.25-10.976h1.71V-15.25H13.25Z"
+                                  transform="translate(473.314 2316.446)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_47" data-name="Контур 47" d="M13.25-7.476h1.71V-11.75H13.25Z"
+                                  transform="translate(473.314 2318.93)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_49" data-name="Контур 49" d="M13.25-3.976h1.71V-8.25H13.25Z"
+                                  transform="translate(473.314 2321.413)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Контур_51" data-name="Контур 51" d="M13.25-14.476h1.71V-18.75H13.25Z"
+                                  transform="translate(473.314 2313.963)" fill="#fff" fill-rule="evenodd"/>
+                        </g>
+                    </svg>
+
+                    <span>BUYERS</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56.945" height="46.328" viewBox="0 0 56.945 46.328">
+                        <path id="Контур_53" data-name="Контур 53"
+                              d="M57.695-9.951l-16.245-2.5-.025.137v3.962l2.712.418v3.1H35.324V-19.625l2.033-.468V-24.25L.75-15.832v4.158L3.462-12.3V22.078H54.983V-6.265l2.712.418ZM44.136-3.494V6.6H35.324V-3.494Zm-29.15,0H23.8V6.6H14.986Zm0-1.346V-14.948L23.8-16.974V-4.84ZM25.155-3.494h8.813V6.6H25.155Zm0-1.346V-17.286l8.813-2.026V-4.84ZM2.106-14.763,36-22.557v1.395l-33.9,7.794Zm11.524.126v9.8H4.817v-7.77Zm0,11.142V6.6H4.817V-3.494ZM42.1,20.732H37.357v-7.4H42.1Zm11.525,0H43.459V11.984H36v8.748H4.817V7.946h48.81Zm0-14.132H45.492V-7.728l8.135,1.254ZM56.339-7.418,42.781-9.508v-1.38L56.339-8.8Z"
+                              transform="translate(-0.75 24.25)" fill="#fff" fill-rule="evenodd"/>
+                    </svg>
+                    <span>INVESTORS</span>
+                </div>
+            </div>
+            <p class="we-are-text">
+                Our advanced and highly efficient platform completely transforms the entire lifecycle of environmental
+                credit ownership for all participants. New levels of transparency and value are now
+                possible—accelerating sustainability and value creation, today.
+            </p>
+            <a href="javascript:void(0)" class="we-are-link link">HOW THE EXCHANGE WORKS</a>
+        </div>
+    </div>
+    <div class="section advantages-section">
+        <picture>
+            <source srcset="../../images/pixel.webp" data-original="../../images/advantegs-bg.webp" class="lazy-web"
+                    type="image/webp">
+            <source srcset="../../images/pixel.jpg" data-original="../../images/advantegs-bg.jpg" class="lazy-web"
+                    type="image/jpg">
+            <img src="../../images/pixel.jpg" data-original="../../images/advantegs-bg.jpg" class="lazy"
+                 alt="AirCarbon">
+        </picture>
+        <div class="container-lg">
+            <div class="advantages-title">
+                WE ARE
+            </div>
+            <div class="advantages-list">
+                <div class="advantages-item">
+                    <div class="advantages-item-title">Global</div>
+                    <p class="advantages-item-text">
+                        ACX has offices in Singapore, Abu Dhabi, Brazil, and the UK with over 100 fully onboarded
+                        clients (and growing) across 30 different countries. We support a wide range of project
+                        developers, traders, hedge funds, and family offices. We’re also building strong partnerships to
+                        develop ACX platforms around
+                        the world.
+                    </p>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item-title">Efficient</div>
+                    <p class="advantages-item-text">
+                        ACX accelerates the value of environmental credit ownership
+                        end to end through the most advanced digital exchange, making the buying, selling, holding, and
+                        retiring experience as easy as
+                        trading a traditional commodity.
+                    </p>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item-title">Transparent</div>
+                    <p class="advantages-item-text">
+                        ACX builds trust and confidence through consistent pricing and standardized digital contracts
+                        across the broadest spectrum of environmental credit categories.
+                    </p>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="advantages-link link">LEARN MORE</a>
+
+            <div class="advantages-title-bot">A wide range of products for
+                an evolving marketplace.
+            </div>
+            <div class="receipts">
+                <span class="receipts__title">ACX DIGITAL RECEIPTS</span>
+                <ul class="receipts__list">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="77.807" height="62.009"
+                             viewBox="0 0 77.807 62.009">
+                            <path id="Контур_56" data-name="Контур 56"
+                                  d="M35.6,21.067c-2.6-2.006-5.106-3.94-7.614-5.868Q20.83,9.7,13.675,4.2a2.02,2.02,0,0,1-.827-2.651A2.046,2.046,0,0,1,15.482.636Q33.66,5.85,51.83,11.091a2.83,2.83,0,0,0,2.409-.272c3.078-1.764,6.172-3.5,9.311-5.157A17.566,17.566,0,0,1,73.137,3.7c3,.214,3.9,1.829,2.491,4.493a17.154,17.154,0,0,1-6.554,6.947c-3.3,1.923-6.664,3.722-9.978,5.617a1.977,1.977,0,0,0-.835,1.058Q53,40.059,47.8,58.32c-.458,1.6-1.123,2.239-2.269,2.154-1.121-.086-1.71-.87-1.861-2.493Q42.432,44.744,41.195,31.5c-.019-.211-.052-.419-.089-.725-.294.142-.529.238-.751.361Q31.043,36.3,21.73,41.455a1.8,1.8,0,0,0-.939,1.2c-1.194,4.244-2.413,8.48-3.625,12.718a2.338,2.338,0,0,1-.248.76c-.155.2-.451.447-.665.428s-.46-.3-.6-.527a1.5,1.5,0,0,1-.093-.628q-.57-6.1-1.14-12.2c-.1-1.036-.615-1.315-1.552-.855a2.037,2.037,0,0,1-1.98-3.56c.926-.587.952-1.144.065-1.829q-4.818-3.714-9.643-7.42a2.278,2.278,0,0,1-.613-.51c-.136-.224-.261-.617-.155-.781a.936.936,0,0,1,.779-.341c.814.164,1.608.43,2.409.661,3.825,1.1,7.646,2.2,11.478,3.271a1.634,1.634,0,0,0,1.12-.076q9.4-5.161,18.773-10.38C35.235,21.315,35.363,21.22,35.6,21.067Z"
+                                  transform="translate(0.523 0.528)" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                  stroke-width="2"/>
+                        </svg>
+                        <span>ACX CORSIA ELIGIBLE</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="62.288" height="61.576"
+                             viewBox="0 0 62.288 61.576">
+                            <path id="Контур_57" data-name="Контур 57"
+                                  d="M57.119,1.478c-.1-.223-.223-.439-.355-.693a2.821,2.821,0,0,0-.248.21A20.857,20.857,0,0,1,45.091,7.71c-3.961.9-7.989,1.518-12,2.183a60.624,60.624,0,0,0-13.84,3.669C11.693,16.751,6,25.02,6.489,33.566a18.772,18.772,0,0,0,1.026,5.153c6.608.128,31.922-.743,40.124-20.822a2.839,2.839,0,1,1,5.256,2.147c-4.583,11.218-14.3,18.974-28.1,22.428A67.556,67.556,0,0,1,10.045,44.4L.832,54.331a1.75,1.75,0,0,0-.09,1.9,8.136,8.136,0,0,0,4.494,3.522.082.082,0,0,0,.1-.034c2.492-4.2,4.956-8.365,8.646-11.419,1.52.756,2.886,1.551,4.337,2.133a28.933,28.933,0,0,0,15.089,1.526,29.116,29.116,0,0,0,15.7-6.785c6.608-5.852,10.149-13.334,11.34-21.968A38.712,38.712,0,0,0,57.119,1.478Z"
+                                  transform="translate(0.477 0.79)" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                  stroke-width="2"/>
+                        </svg>
+                        <span>ACX SUSTAINABLE DEVELOPMENT</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="68.06" height="65.645"
+                             viewBox="0 0 68.06 65.645">
+                            <path id="Контур_60" data-name="Контур 60"
+                                  d="M6.948,35.624V61.9c0,1.533.7,2.222,2.24,2.222,5.025,0,10.051-.041,15.076.02a3.524,3.524,0,0,0,3.68-3.674c-.065-6.316-.024-12.634-.024-18.951v-.656h11.2v.729q0,9.477,0,18.953a3.315,3.315,0,0,0,3.569,3.579H57.818a1.95,1.95,0,0,0,2.228-2.246V34.913c1.576,0,3.061-.022,4.547.008a1.7,1.7,0,0,0,1.268-3.03Q50.5,16.545,35.17,1.172a2.37,2.37,0,0,0-3.32.014c-3.97,4.061-8.013,8.052-12.03,12.07Q10.476,22.6,1.128,31.947a1.685,1.685,0,0,0-.484,1.971,1.71,1.71,0,0,0,1.77.991c1.485-.006,2.969,0,4.535,0Z"
+                                  transform="translate(0.515 0.5)" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                  stroke-width="2"/>
+                        </svg>
+                        <span>AcX household Offset</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44.176" height="67.378"
+                             viewBox="0 0 44.176 67.378">
+                            <path id="Контур_58" data-name="Контур 58"
+                                  d="M16.987,44.963c-.916,0-1.828.013-2.742,0-1.766-.032-2.684-.67-3.1-2.35a3.241,3.241,0,0,0-1.92-2.54,3.091,3.091,0,0,1-1.623-1.92,17.333,17.333,0,0,1-.115-4.765,1.952,1.952,0,0,1,2.12-1.571c4.9-.03,9.792-.047,14.687,0a2.3,2.3,0,0,1,2.4,2.458c.042.839.027,1.681.007,2.52a3.987,3.987,0,0,1-2.393,3.634,3.8,3.8,0,0,0-1.2,1.383,6.6,6.6,0,0,0-.4,1.246,2.616,2.616,0,0,1-2.548,1.888c-1.059.03-2.12.007-3.177.007Z"
+                                  transform="translate(5.127 21.411)" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                  stroke-width="2"/>
+                            <path id="Контур_59" data-name="Контур 59"
+                                  d="M39.971,11.288A20.908,20.908,0,0,0,18.187.817C10.051,2.286,4.379,6.946,1.741,14.758-.9,22.591.713,29.781,6.3,35.94a20.827,20.827,0,0,1,5.27,10.3c.44,2.335,1.618,3.292,4.03,3.321,1.975.022,3.948,0,5.921,0v-.005c2.12,0,4.241.035,6.36-.01a3.417,3.417,0,0,0,3.693-3.052A21.221,21.221,0,0,1,37.234,35.57,20.923,20.923,0,0,0,39.971,11.288Z"
+                                  transform="translate(0.531 0.517)" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                  stroke-width="2"/>
+                        </svg>
+                        <span>ACX RENEWABLE ENERGY</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="62.496" height="66.878"
+                             viewBox="0 0 62.496 66.878">
+                            <path id="Контур_61" data-name="Контур 61"
+                                  d="M18.65,44.393c-.268-.028-.527-.064-.778-.111-3.341-.633-5.512-1.935-6.827-4.1A7.372,7.372,0,0,0,6.6,36.761a8.634,8.634,0,0,1-5.421-4.429,6.584,6.584,0,0,1,1.659-7.915c.08-.071.176-.136.268-.205A3.863,3.863,0,0,0,4.82,21.942a3.453,3.453,0,0,0-.9-2.873c-.064-.085-.134-.167-.184-.251a6.6,6.6,0,0,1,1.512-8.448,10.7,10.7,0,0,1,6.732-2.762c.153-.007.306-.009.459-.009.877,0,1.786.087,2.75.181.4.038.79.077,1.185.108.235.023.386.033.529.033a2.845,2.845,0,0,0,2.671-1.751C20.879,3.3,23.26,1.542,26.857.8A14.012,14.012,0,0,1,29.675.5a11.553,11.553,0,0,1,6.773,2.181,12.82,12.82,0,0,1,2.047,2A3.279,3.279,0,0,0,41,5.881a3.754,3.754,0,0,0,1.041-.155,14.256,14.256,0,0,1,3.862-.566,11.868,11.868,0,0,1,6.256,1.779,7.561,7.561,0,0,1,3.8,5.047,5.863,5.863,0,0,1-.7,4.3,3.253,3.253,0,0,0-.416,2.506,3.224,3.224,0,0,0,1.639,1.918A8,8,0,0,1,60.357,25,6.767,6.767,0,0,1,58.2,32.435a11.794,11.794,0,0,1-4.906,2.452,3.653,3.653,0,0,0-2.374,1.826c-1.241,2.572-3.34,4.177-6.591,5.028a8.4,8.4,0,0,0,.623-4.546,7,7,0,0,0-5.379-5.926,7.478,7.478,0,0,0-1.866-.245,7.221,7.221,0,0,0-5.616,2.84c-.108.131-.211.261-.306.393-.36-.771-.71-1.558-1.074-2.374l-.325-.731A7.557,7.557,0,0,0,24.7,26.413a8.519,8.519,0,0,0-1.512-.139,7.6,7.6,0,0,0-6.065,3.042,7.057,7.057,0,0,0-.783,7.884,25.534,25.534,0,0,1,2.25,6.8Q18.621,44.192,18.65,44.393Z"
+                                  transform="translate(0.656 0.5)" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                  stroke-width="2"/>
+                            <path id="Контур_62" data-name="Контур 62"
+                                  d="M15.31,37.521a29.163,29.163,0,0,0-1.168-10.626c-.538-1.577-1.159-3.129-1.826-4.657a2.738,2.738,0,0,1,1.291-3.85,2.767,2.767,0,0,1,3.884,1.265c.435.863.754,1.784,1.169,2.657.51,1.069,1.022,2.142,1.622,3.162a8.858,8.858,0,0,0,1.425,1.822,2.14,2.14,0,0,0,3.427-.056,24.984,24.984,0,0,0,1.74-2.487,7.484,7.484,0,0,1,1.062-1.357,2.456,2.456,0,0,1,4.015,2.186,4.713,4.713,0,0,1-.454,1.591,21.532,21.532,0,0,0-2.224,10.473c.063,1.669.045,3.343,0,5.014a5.412,5.412,0,0,0,1.034,3.559,37.73,37.73,0,0,0,3.166,3.467c.493.493.868.947.545,1.632-.3.649-.877.721-1.544.614a21.362,21.362,0,0,1-5.964-1.768,3.56,3.56,0,0,0-3.455.143c-1.171.632-2.362,1.229-3.542,1.843a1.269,1.269,0,0,1-1.495,0,1.214,1.214,0,0,1-.4-1.371,2.113,2.113,0,0,0,.038-.433c.042-1.164-.263-1.378-1.349-.95-.9.355-1.8.714-2.7,1.063A1.2,1.2,0,0,1,12.3,48.462,10.114,10.114,0,0,0,15.322,40.5C15.246,39.512,15.31,38.514,15.31,37.521Z"
+                                  transform="translate(9.037 13.484)" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                  stroke-width="2"/>
+                        </svg>
+
+                        <span>Acx global nature</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="62.497" height="66.879"
+                             viewBox="0 0 62.497 66.879">
+                            <path id="Контур_63" data-name="Контур 63"
+                                  d="M38.778,35.418H35.641a.582.582,0,0,0-.581.581v3.007a.581.581,0,0,1-.581.581H30.949a.581.581,0,0,1-.581-.581V36a.581.581,0,0,0-.581-.581H26.648a.581.581,0,0,1-.581-.581V31.568a.58.58,0,0,1,.581-.581h3.138a.581.581,0,0,0,.581-.581V27.4a.581.581,0,0,1,.581-.581h3.529a.581.581,0,0,1,.581.581v3.007a.582.582,0,0,0,.581.581h3.138a.581.581,0,0,1,.581.581v3.268A.582.582,0,0,1,38.778,35.418Z"
+                                  transform="translate(19.584 19.983)" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                  stroke-width="2"/>
+                            <path id="Контур_64" data-name="Контур 64"
+                                  d="M18.65,44.393c-.268-.028-.527-.064-.778-.111-3.341-.633-5.512-1.935-6.827-4.1A7.372,7.372,0,0,0,6.6,36.762a8.634,8.634,0,0,1-5.421-4.429,6.584,6.584,0,0,1,1.659-7.915c.08-.071.176-.136.268-.205A3.863,3.863,0,0,0,4.82,21.943a3.453,3.453,0,0,0-.9-2.873c-.064-.085-.134-.167-.184-.251a6.6,6.6,0,0,1,1.512-8.448,10.7,10.7,0,0,1,6.732-2.762c.153-.007.306-.009.459-.009.877,0,1.786.087,2.75.181.4.038.79.077,1.185.108.235.023.386.033.529.033a2.845,2.845,0,0,0,2.671-1.751C20.879,3.3,23.26,1.542,26.857.8A14.012,14.012,0,0,1,29.675.5a11.553,11.553,0,0,1,6.773,2.181,12.82,12.82,0,0,1,2.047,2A3.279,3.279,0,0,0,41,5.881a3.754,3.754,0,0,0,1.041-.155,14.256,14.256,0,0,1,3.862-.566,11.868,11.868,0,0,1,6.256,1.779,7.561,7.561,0,0,1,3.8,5.047,5.863,5.863,0,0,1-.7,4.3,3.253,3.253,0,0,0-.416,2.506,3.224,3.224,0,0,0,1.639,1.918A8,8,0,0,1,60.357,25,6.767,6.767,0,0,1,58.2,32.435a11.8,11.8,0,0,1-4.906,2.452,3.653,3.653,0,0,0-2.374,1.826c-1.241,2.572-3.34,4.177-6.591,5.028a8.4,8.4,0,0,0,.623-4.546,7,7,0,0,0-5.379-5.926,7.478,7.478,0,0,0-1.866-.245,7.221,7.221,0,0,0-5.616,2.84c-.108.131-.211.261-.306.393-.36-.771-.71-1.558-1.074-2.374l-.325-.731A7.557,7.557,0,0,0,24.7,26.414a8.519,8.519,0,0,0-1.512-.139,7.6,7.6,0,0,0-6.065,3.042,7.057,7.057,0,0,0-.783,7.884,25.534,25.534,0,0,1,2.25,6.8Q18.621,44.192,18.65,44.393Z"
+                                  transform="translate(0.656 0.5)" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                  stroke-width="2"/>
+                            <path id="Контур_65" data-name="Контур 65"
+                                  d="M15.31,37.521a29.163,29.163,0,0,0-1.168-10.626c-.538-1.577-1.159-3.129-1.826-4.657a2.739,2.739,0,0,1,1.291-3.85,2.767,2.767,0,0,1,3.884,1.265c.435.863.754,1.784,1.17,2.657.51,1.069,1.022,2.142,1.622,3.162a8.859,8.859,0,0,0,1.425,1.822,2.14,2.14,0,0,0,3.427-.056,24.985,24.985,0,0,0,1.74-2.487,7.484,7.484,0,0,1,1.062-1.357,2.456,2.456,0,0,1,4.015,2.186,4.713,4.713,0,0,1-.454,1.591,21.532,21.532,0,0,0-2.224,10.473c.063,1.669.045,3.343,0,5.014a5.412,5.412,0,0,0,1.034,3.559,37.728,37.728,0,0,0,3.166,3.467c.493.493.868.947.545,1.632-.3.649-.877.72-1.544.614a21.362,21.362,0,0,1-5.964-1.768,3.56,3.56,0,0,0-3.455.143c-1.171.632-2.362,1.229-3.542,1.843a1.269,1.269,0,0,1-1.495,0,1.214,1.214,0,0,1-.4-1.371,2.113,2.113,0,0,0,.038-.433c.042-1.164-.263-1.378-1.349-.95-.9.355-1.8.714-2.7,1.063A1.2,1.2,0,0,1,12.3,48.462,10.114,10.114,0,0,0,15.322,40.5C15.246,39.512,15.31,38.515,15.31,37.521Z"
+                                  transform="translate(9.037 13.484)" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                  stroke-width="2"/>
+                        </svg>
+                        <span>AcX global nature+</span>
+                    </li>
+                </ul>
+                <a href="javascript:void(0)" class="receipts__link link">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="section work-section">
+        <img src="../../images/work-bg.jpg" alt="work" class="lazy">
+        <div class="container-lg">
+            <div class="work-wrapper">
+                <div>
+                    <span class="work-suptitle">WE ARE</span>
+                    <span class="work-title">Collaborative</span>
+                    <p class="work-text">We work with a wide range of partners, affiliates, and brokerages that are
+                        recognized worldwide.</p>
+                    <a href="javascript:void(0)" class="work-link link">OUR PARTNERS</a>
+                </div>
+                <div>
+                    <div class="work-quot">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="66.35" height="53" viewBox="0 0 66.35 53">
+                            <path id="_" data-name="“"
+                                  d="M17.175,32.7h16.84L27.288,57.006a13.83,13.83,0,0,1,5.506,4.957A15.262,15.262,0,0,1,35.05,70.3,14.979,14.979,0,0,1,30.7,81.439,15.186,15.186,0,0,1,19.65,85.7,15.3,15.3,0,0,1,8.524,81.364,14.906,14.906,0,0,1,4.1,70.3a25.772,25.772,0,0,1,.78-6.243,68.9,68.9,0,0,1,3.346-9.14Zm14.211,2H18.525L10.07,55.691a67.232,67.232,0,0,0-3.25,8.851A23.77,23.77,0,0,0,6.1,70.3a12.81,12.81,0,0,0,3.826,9.636A13.193,13.193,0,0,0,19.65,83.7a13.084,13.084,0,0,0,9.65-3.689A12.885,12.885,0,0,0,33.05,70.3a13.3,13.3,0,0,0-1.944-7.263A11.991,11.991,0,0,0,25.7,58.465l-.792-.348Zm21.189-2h16.84L62.688,57.006a13.83,13.83,0,0,1,5.506,4.957A15.262,15.262,0,0,1,70.45,70.3,14.979,14.979,0,0,1,66.1,81.439,15.186,15.186,0,0,1,55.05,85.7a15.3,15.3,0,0,1-11.126-4.336A14.906,14.906,0,0,1,39.5,70.3a25.772,25.772,0,0,1,.78-6.243,68.9,68.9,0,0,1,3.346-9.14Zm14.211,2H53.925L45.47,55.691a67.23,67.23,0,0,0-3.25,8.851A23.771,23.771,0,0,0,41.5,70.3a12.81,12.81,0,0,0,3.826,9.636A13.193,13.193,0,0,0,55.05,83.7a13.084,13.084,0,0,0,9.65-3.689A12.885,12.885,0,0,0,68.45,70.3a13.3,13.3,0,0,0-1.944-7.263A11.991,11.991,0,0,0,61.1,58.465l-.792-.348Z"
+                                  transform="translate(-4.1 -32.7)" fill="#37b1a0"/>
+                        </svg>
+                    </div>
+                    <div class="work-arrow arrow-prev arrow-prev1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="57.407" height="57.407"
+                             viewBox="0 0 57.407 57.407">
+                            <g id="Сгруппировать_345" data-name="Сгруппировать 345"
+                               transform="translate(55.907 55.907) rotate(180)">
+                                <g id="Сгруппировать_61" data-name="Сгруппировать 61" transform="translate(0 0)">
+                                    <path id="Контур_55" data-name="Контур 55"
+                                          d="M27.212,0A27.2,27.2,0,1,1,0,27.2,27.2,27.2,0,0,1,27.212,0ZM22.842,41.046,36.507,27.364,22.842,13.682"
+                                          fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="8"
+                                          stroke-width="3"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="work-slider slick-slider"
+                         data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows": true, "fade": true, "adaptiveHeight": true, "prevArrow": ".arrow-prev1", "nextArrow": ".arrow-next1", "dots": false, "infinite": false}'>
+                        <div class="slide">
+                            <p>
+                                We are delighted to be partnering with AirCarbon to perform the independent verification
+                                of
+                                the carbon credit process that involves an objective assessment of the authenticity of
+                                documents and verification of documents.”
+                            </p>
+                            <span>DR. NADEGE CLAUDEL<br> General Manager, BSI</span>
+                        </div>
+                        <div class="slide">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.”
+                            </p>
+                            <span>DR. NADEGE CLAUDEL<br> General Manager, BSI</span>
+                        </div>
+                        <div class="slide"><p>
+                            Architecto dolorem ipsum molestias
+                            sequi ut! Dolorum, excepturi, ipsam. Adipisci aliquid, tenetur.
+                            ”
+                        </p>
+                            <span>DR. NADEGE CLAUDEL<br> General Manager, BSI</span></div>
+                    </div>
+                    <div class="work-arrow arrow-next arrow-next1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="57.407" height="57.407"
+                             viewBox="0 0 57.407 57.407">
+                            <path id="Контур_55" data-name="Контур 55"
+                                  d="M27.212,0A27.2,27.2,0,1,1,0,27.2,27.2,27.2,0,0,1,27.212,0ZM22.842,41.046,36.507,27.364,22.842,13.682"
+                                  transform="translate(1.5 1.5)" fill="none" stroke="#fff" stroke-linecap="square"
+                                  stroke-miterlimit="8" stroke-width="3"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="work-wrapper">
+                <div>
+                    <span class="work-suptitle">WE ARE</span>
+                    <span class="work-title">Committed</span>
+                    <p class="work-text">We’re involved with our customers at every step of the way to make sure they’re
+                        successful in achieving their sustainability and financial goals.</p>
+                    <a href="javascript:void(0)" class="work-link link">Our work</a>
+                </div>
+                <div>
+                    <div class="work-quot">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="66.35" height="53" viewBox="0 0 66.35 53">
+                            <path id="_" data-name="“"
+                                  d="M17.175,32.7h16.84L27.288,57.006a13.83,13.83,0,0,1,5.506,4.957A15.262,15.262,0,0,1,35.05,70.3,14.979,14.979,0,0,1,30.7,81.439,15.186,15.186,0,0,1,19.65,85.7,15.3,15.3,0,0,1,8.524,81.364,14.906,14.906,0,0,1,4.1,70.3a25.772,25.772,0,0,1,.78-6.243,68.9,68.9,0,0,1,3.346-9.14Zm14.211,2H18.525L10.07,55.691a67.232,67.232,0,0,0-3.25,8.851A23.77,23.77,0,0,0,6.1,70.3a12.81,12.81,0,0,0,3.826,9.636A13.193,13.193,0,0,0,19.65,83.7a13.084,13.084,0,0,0,9.65-3.689A12.885,12.885,0,0,0,33.05,70.3a13.3,13.3,0,0,0-1.944-7.263A11.991,11.991,0,0,0,25.7,58.465l-.792-.348Zm21.189-2h16.84L62.688,57.006a13.83,13.83,0,0,1,5.506,4.957A15.262,15.262,0,0,1,70.45,70.3,14.979,14.979,0,0,1,66.1,81.439,15.186,15.186,0,0,1,55.05,85.7a15.3,15.3,0,0,1-11.126-4.336A14.906,14.906,0,0,1,39.5,70.3a25.772,25.772,0,0,1,.78-6.243,68.9,68.9,0,0,1,3.346-9.14Zm14.211,2H53.925L45.47,55.691a67.23,67.23,0,0,0-3.25,8.851A23.771,23.771,0,0,0,41.5,70.3a12.81,12.81,0,0,0,3.826,9.636A13.193,13.193,0,0,0,55.05,83.7a13.084,13.084,0,0,0,9.65-3.689A12.885,12.885,0,0,0,68.45,70.3a13.3,13.3,0,0,0-1.944-7.263A11.991,11.991,0,0,0,61.1,58.465l-.792-.348Z"
+                                  transform="translate(-4.1 -32.7)" fill="#37b1a0"/>
+                        </svg>
+                    </div>
+                    <div class="work-arrow arrow-prev arrow-prev2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="57.407" height="57.407"
+                             viewBox="0 0 57.407 57.407">
+                            <g id="Сгруппировать_345" data-name="Сгруппировать 345"
+                               transform="translate(55.907 55.907) rotate(180)">
+                                <g id="Сгруппировать_61" data-name="Сгруппировать 61" transform="translate(0 0)">
+                                    <path id="Контур_55" data-name="Контур 55"
+                                          d="M27.212,0A27.2,27.2,0,1,1,0,27.2,27.2,27.2,0,0,1,27.212,0ZM22.842,41.046,36.507,27.364,22.842,13.682"
+                                          fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="8"
+                                          stroke-width="3"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="work-slider slick-slider"
+                         data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows": true, "fade": true, "adaptiveHeight": true, "prevArrow": ".arrow-prev2", "nextArrow": ".arrow-next2", "dots": false, "infinite": false}'>
+                        <div class="slide">
+                            <p>
+                                ACX enables TradeFlow to execute on a core part of our Climate change and
+                                ESG initiative which is to neutralize Shipping-related Carbon Emissions for the
+                                Commodity export trades we enable for SME firms around the world.”
+                            </p>
+                            <span>DR. TOM JAMES<br>
+                                CEO & CIO<br>
+                                GTradeFlow Capital Management</span>
+                        </div>
+                        <div class="slide">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.”
+                            </p>
+                            <span>DR. NADEGE CLAUDEL<br> General Manager, BSI</span>
+                        </div>
+                        <div class="slide"><p>
+                            Architecto dolorem ipsum molestias
+                            sequi ut! Dolorum, excepturi, ipsam. Adipisci aliquid, tenetur.
+                            ”
+                        </p>
+                            <span>DR. TOM JAMES<br>
+                                CEO & CIO<br>
+                                GTradeFlow Capital Management</span></div>
+                    </div>
+                    <div class="work-arrow arrow-next arrow-next2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="57.407" height="57.407"
+                             viewBox="0 0 57.407 57.407">
+                            <path id="Контур_55" data-name="Контур 55"
+                                  d="M27.212,0A27.2,27.2,0,1,1,0,27.2,27.2,27.2,0,0,1,27.212,0ZM22.842,41.046,36.507,27.364,22.842,13.682"
+                                  transform="translate(1.5 1.5)" fill="none" stroke="#fff" stroke-linecap="square"
+                                  stroke-miterlimit="8" stroke-width="3"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section diverse-section">
+        <div class="container-lg">
+            <div class="work-wrapper">
+                <div>
+                    <span class="work-suptitle">WE ARE</span>
+                    <span class="work-title">Diverse</span>
+                    <p class="work-text">TThe ACX team brings together subject matter experts seasoned in exchange
+                        architecture, carbon trading, and business building.</p>
+                    <a href="javascript:void(0)" class="work-link link">ABOUT US</a>
+                </div>
+                <div>
+                    <div class="work-arrow arrow-prev arrow-prev3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="57.407" height="57.407"
+                             viewBox="0 0 57.407 57.407">
+                            <g id="Сгруппировать_61" data-name="Сгруппировать 61"
+                               transform="translate(55.907 55.907) rotate(180)">
+                                <path id="Контур_55" data-name="Контур 55"
+                                      d="M27.212,0A27.2,27.2,0,1,1,0,27.2,27.2,27.2,0,0,1,27.212,0ZM22.842,41.046,36.507,27.364,22.842,13.682"
+                                      fill="none" stroke="#043451" stroke-linecap="square" stroke-miterlimit="8"
+                                      stroke-width="3"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="work-slider slick-slider"
+                         data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows": true, "fade": true, "adaptiveHeight": true, "prevArrow": ".arrow-prev3", "nextArrow": ".arrow-next3", "dots": false, "infinite": false}'>
+                        <div class="slide">
+                            <ul class="diverses-list">
+                                <li>
+                                    <div class="diverse__pic">
+                                        <img src="../../images/diverse-01.jpg" alt="Thomas McMahon" class="lazy">
+                                    </div>
+                                    <div class="diverse__about">
+                                        <span>Thomas McMahon</span>
+                                        <span>CEO & Co-Founder</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="diverse__pic">
+                                        <img src="../../images/diverse-02.jpg" alt="Thomas McMahon" class="lazy">
+                                    </div>
+                                    <div class="diverse__about">
+                                        <span>WILLIAM PAZOS</span>
+                                        <span>Managing Director & Co-Founder</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="diverse__pic">
+                                        <img src="../../images/diverse-03.jpg" alt="Thomas McMahon" class="lazy">
+                                    </div>
+                                    <div class="diverse__about">
+                                        <span>HUM WEI MEI</span>
+                                        <span>Global Head of Carbon & Environmental Products</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="diverse__pic">
+                                        <img src="../../images/diverse-04.jpg" alt="Thomas McMahon" class="lazy">
+                                    </div>
+                                    <div class="diverse__about">
+                                        <span>KEVIN IWANAGA</span>
+                                        <span>President & COO (Middle East/Africa)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="diverse__pic">
+                                        <img src="../../images/diverse-05.jpg" alt="Thomas McMahon" class="lazy">
+                                    </div>
+                                    <div class="diverse__about">
+                                        <span>INGO KLEINSCHMIDT</span>
+                                        <span>CFO</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="diverse__pic">
+                                        <img src="../../images/diverse-05.jpg" alt="Thomas McMahon" class="lazy">
+                                    </div>
+                                    <div class="diverse__about">
+                                        <span>ANDREW CULLEN</span>
+                                        <span>VP Institutional Sales</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="slide">
+                            <ul class="diverses-list">
+                                <li>
+                                    <div class="diverse__pic">
+                                        <img src="../../images/diverse-04.jpg" alt="Thomas McMahon" class="lazy">
+                                    </div>
+                                    <div class="diverse__about">
+                                        <span>KEVIN IWANAGA</span>
+                                        <span>President & COO (Middle East/Africa)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="diverse__pic">
+                                        <img src="../../images/diverse-05.jpg" alt="Thomas McMahon" class="lazy">
+                                    </div>
+                                    <div class="diverse__about">
+                                        <span>ANDREW CULLEN</span>
+                                        <span>VP Institutional Sales</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="diverse__pic">
+                                        <img src="../../images/diverse-02.jpg" alt="Thomas McMahon" class="lazy">
+                                    </div>
+                                    <div class="diverse__about">
+                                        <span>WILLIAM PAZOS</span>
+                                        <span>Managing Director & Co-Founder</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="diverse__pic">
+                                        <img src="../../images/diverse-03.jpg" alt="Thomas McMahon" class="lazy">
+                                    </div>
+                                    <div class="diverse__about">
+                                        <span>HUM WEI MEI</span>
+                                        <span>Global Head of Carbon & Environmental Products</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="work-arrow arrow-next arrow-next3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="57.407" height="57.407"
+                             viewBox="0 0 57.407 57.407">
+                            <g id="Сгруппировать_61" data-name="Сгруппировать 61" transform="translate(1.5 1.5)">
+                                <path id="Контур_55" data-name="Контур 55"
+                                      d="M27.212,0A27.2,27.2,0,1,1,0,27.2,27.2,27.2,0,0,1,27.212,0ZM22.842,41.046,36.507,27.364,22.842,13.682"
+                                      fill="none" stroke="#043451" stroke-linecap="square" stroke-miterlimit="8"
+                                      stroke-width="3"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--${require('../parts/consult.html')}-->
+    </div>
+    <div class="section current-section">
+        <img src="../../images/current-bg.jpg" alt="work" class="lazy">
+        <div class="container-lg">
+            <div class="work-wrapper">
+                <div>
+                    <span class="work-suptitle">WE ARE</span>
+                    <span class="work-title">Current</span>
+                    <p class="work-text">We’re always on the move in the world of environmental markets. And we actively
+                        participate in industry events and promote thought leadership.
+                    </p>
+                    <a href="javascript:void(0)" class="work-link link">EXPLORE OUR NEWS, BLOG, AND EVENTS</a>
+                </div>
+                <div>
+                    <div class="current-wrapper">
+                        <div class="current-slider slick-slider"
+                             data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows": true, "fade": true, "adaptiveHeight": true, "prevArrow": ".arrow-prev4", "nextArrow": ".arrow-next4", "dots": false, "infinite": true}'>
+                            <div class="slide">
+                                <span>AUGUST 16, 2022</span>
+                                <div>
+                                    AirCarbon Exchange selects Eventus as partner to introduce first comprehensive
+                                    market surveillance program for Voluntary Carbon Market
+                                </div>
+                                <p>
+                                    Eventus, a leading global provider of multi-asset class trade surveillance and
+                                    market risk solutions, and AirCarbon Exchange (ACX), the global exchange
+                                    revolutionizing the Voluntary Carbon Market (VCM), today announced that ACX has
+                                    selected Eventus as its partner to introduce the first comprehensive market
+                                    surveillance program for the VCM, which.
+                                </p>
+                                <a href="javascript:void(0)">READ MORE</a>
+                            </div>
+                            <div class="slide">
+                                <span>AUGUST 22, 2022</span>
+                                <div>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda enim explicabo
+                                    quis quo voluptatem!
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet error facere
+                                    molestias, nihil praesentium repellat tempore tenetur vel voluptatibus?
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet error facere
+                                    molestias, nihil praesentium repellat tempore tenetur vel voluptatibus?
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet error facere
+                                    molestias, nihil praesentium repellat tempore tenetur vel voluptatibus?
+                                </p>
+                                <a href="javascript:void(0)">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="current-arrows">
+                            <div class="current-arrow arrow-next arrow-next4">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="57.407" height="57.407"
+                                     viewBox="0 0 57.407 57.407">
+                                    <g id="Сгруппировать_378" data-name="Сгруппировать 378"
+                                       transform="translate(1.5 1.5)">
+                                        <g id="Сгруппировать_61" data-name="Сгруппировать 61"
+                                           transform="translate(0 0)">
+                                            <path id="Контур_55" data-name="Контур 55"
+                                                  d="M27.2,0A27.2,27.2,0,1,0,54.407,27.195,27.2,27.2,0,0,0,27.2,0Zm4.369,41.045L17.9,27.364,31.565,13.682"
+                                                  fill="none" stroke="#043451" stroke-linecap="square"
+                                                  stroke-miterlimit="8"
+                                                  stroke-width="3"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="current-arrow arrow-prev arrow-prev4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="57.407" height="57.407"
+                                     viewBox="0 0 57.407 57.407">
+                                    <g id="Сгруппировать_377" data-name="Сгруппировать 377"
+                                       transform="translate(1.5 1.5)">
+                                        <g id="Сгруппировать_61" data-name="Сгруппировать 61"
+                                           transform="translate(0 0)">
+                                            <path id="Контур_55" data-name="Контур 55"
+                                                  d="M27.212,0A27.2,27.2,0,1,1,0,27.2,27.2,27.2,0,0,1,27.212,0ZM22.842,41.046,36.507,27.364,22.842,13.682"
+                                                  fill="none" stroke="#043451" stroke-linecap="square"
+                                                  stroke-miterlimit="8"
+                                                  stroke-width="3"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-partners">
+        <div class="container-lg">
+            <ul class="exchange-brands__list">
+                <li>
+                    <img src="../../images/pixel.png" data-original="../../images/exchange-logo-01.png" class="lazy" alt="">
+                </li>
+                <li>
+                    <img src="../../images/pixel.png" data-original="../../images/exchange-logo-02.png" class="lazy" alt="">
+                </li>
+                <li>
+                    <img src="../../images/pixel.png" data-original="../../images/exchange-logo-03.png" class="lazy" alt="">
+                </li>
+                <li>
+                    <img src="../../images/pixel.png" data-original="../../images/exchange-logo-04.png" class="lazy" alt="">
+                </li>
+                <li>
+                    <img src="../../images/pixel.png" data-original="../../images/exchange-logo-05.png" class="lazy" alt="">
+                </li>
+                <li>
+                    <img src="../../images/pixel.png" data-original="../../images/exchange-logo-06.png" class="lazy" alt="">
+                </li>
+                <li>
+                    <img src="../../images/pixel.png" data-original="../../images/exchange-logo-07.png" class="lazy" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+${require('../parts/footer.html')}
+
+</body>
+</html>
